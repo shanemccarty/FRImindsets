@@ -1,0 +1,96 @@
+# Measures & References {.unnumbered}
+
+All measures are drawn from existing, validated instruments (no author-created items). See the
+companion strategy document (*FRI PM Mindsets Strategy*) for the full item bank, scoring, and
+access status.
+
+## Measure by week
+
+| Week | Mindset | Instrument · subscale | Access |
+|---|---|---|---|
+| 0 | Purposeful Peer Mentoring | Mentoring Competency Assessment (Fleming et al., 2013) | Free |
+| 1 | Mentoring Style | Mentoring Style Values Inventory (adapted from Ertesvåg, 2011) | Adapted |
+| 2 | Motivational Style | Mentoring Regulatory Focus 2×2 (adapted; Higgins, 1997; Lockwood et al., 2002) | Adapted |
+| 3 | Leadership Focus | Promotion/Prevention Team Leadership Scale (adapted) | Adapted |
+| 4 | +/- Feedback | Feedback Orientation Scale · Accountability + Utility (Linderbaum & Levy, 2010) | © |
+| 5 | Feedback Purpose | Dual-Role FOS (2025); Teachers' Conceptions of Assessment (Brown, 2006) | © |
+| 6 | Leadership Role | SPLIT, full inventory (Grille & Kauffeld, 2015; cf. Hiller et al., 2006) | © |
+| 7 | Leadership Target | SPLIT · task & relation subscales (Grille & Kauffeld, 2015) | © |
+| 8 | Inclusive Mentoring | Culturally Aware Mentorship Self-Efficacy (Byars-Winston & Butz, 2021) | Free *(proposed)* |
+| 9 | Conflict Mediator | Dutch Test for Conflict Handling (DUTCH), short form (De Dreu et al., 2001) | Free (© article) |
+| 10 | Goal Preference | TCoA (Brown, 2006); Outcome and Process Scale (2017); Work Domain Goal Orientation (VandeWalle, 1997) | © |
+| 11 | Communicator | Nonviolent Communication Behaviors Scale (Cheung et al., 2022) | © |
+| 12 | People Orientation | 'Kind of Person' Implicit Theory Scale (Dweck, 1999) | Free |
+| 13 | Self-Awareness | SRIS · Insight (Grant et al., 2002); MCA · Fostering Independence (Fleming et al., 2013); four-type framework from Eurich (2018) | Free / © |
+| 14 | Paradoxical | Paradox Mindset Scale, 9-item (Miron-Spektor et al., 2018) | © |
+
+**Access legend.** Free = freely available for research and education. © = copyrighted, items
+typically in the source article, free for non-commercial research with citation (verify terms).
+Licensed = commercially licensed, purchase or permission required. Adapted = adapted from a
+copyrighted instrument (cite the original).
+
+::: {.callout-note}
+## Parked measures
+The Five-Dimensional Curiosity Scale (Kashdan et al., 2020) and the Mentor Self-Efficacy Scale
+are no longer part of the Table 1 curriculum. Their item banks are retained in the strategy
+document under **Parked measures** in case a week is reassigned.
+:::
+
+## References
+
+Brown, G. T. L. (2006). Teachers' conceptions of assessment: Validation of an abridged
+instrument. *Psychological Reports, 99*, 166–170.
+
+Byars-Winston, A., & Butz, A. R. (2021). Measuring research mentors' cultural diversity
+awareness for race/ethnicity in STEM. *CBE Life Sciences Education, 20*(2).
+
+Cheung, C. T. Y., et al. (2022). Reliability and validity of a novel measure of nonviolent
+communication behaviors. *Research on Social Work Practice.*
+
+De Dreu, C. K. W., Evers, A., Beersma, B., Kluwer, E. S., & Nauta, A. (2001). A theory-based
+measure of conflict management strategies in the workplace. *Journal of Organizational
+Behavior, 22*(6), 645–668.
+
+Dweck, C. S. (1999). *Self-theories: Their role in motivation, personality, and development.*
+Psychology Press.
+
+Ertesvåg, S. K. (2011). Measuring authoritative teaching. *Teaching and Teacher Education, 27*.
+
+Eurich, T. (2017). *Insight: Why we're not as self-aware as we think, and how seeing
+ourselves clearly helps us succeed at work and in life.* Crown Business.
+
+Eurich, T. (2018, January 4). What self-awareness really is (and how to cultivate it).
+*Harvard Business Review.*
+
+Fleming, M., et al. (2013). The Mentoring Competency Assessment. *Academic Medicine, 88*(7),
+1002–1008.
+
+Grant, A. M., Franklin, J., & Langford, P. (2002). The Self-Reflection and Insight Scale.
+*Social Behavior and Personality, 30*(8), 821–836.
+
+Grille, A., & Kauffeld, S. (2015). Development and preliminary validation of the SPLIT.
+*Psychology, 6*, 75–92.
+
+Higgins, E. T. (1997). Beyond pleasure and pain. *American Psychologist, 52*(12), 1280–1300.
+
+Hiller, N. J., Day, D. V., & Vance, R. J. (2006). Collective enactment of leadership roles.
+*The Leadership Quarterly, 17*, 387–397.
+
+Linderbaum, B. A., & Levy, P. E. (2010). The development and validation of the Feedback
+Orientation Scale. *Journal of Management, 36*(6), 1372–1405.
+
+Lockwood, P., Jordan, C. H., & Kunda, Z. (2002). Motivation by positive or negative role
+models. *Journal of Personality and Social Psychology, 83*(4), 854–864.
+
+Miron-Spektor, E., et al. (2018). Microfoundations of organizational paradox. *Academy of
+Management Journal, 61*(1), 26–45.
+
+Rahim, M. A. (1983). *Rahim Organizational Conflict Inventory-II.* (Commercially licensed.)
+
+VandeWalle, D. (1997). Development and validation of a Work Domain Goal Orientation
+Instrument. *Educational and Psychological Measurement, 57*(6), 995–1015.
+
+::: {.callout-important}
+Data in this guide are **simulated**. Replace `data/sim_survey_data.csv` with the class's
+Qualtrics export before sharing.
+:::

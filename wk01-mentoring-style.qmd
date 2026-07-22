@@ -1,0 +1,96 @@
+# 1. Mentoring Style {.unnumbered}
+
+```{r}
+#| include: false
+source("_setup.R")
+```
+
+**Big Question:** *Does your style focus on structure or support?*
+
+**Constructs:** Authoritative mentoring blends two things at once:
+
+- [**Support**]{style="color:#007F85;"}: warmth, care, and responsiveness toward your mentees.
+  - *Survey item:* "How important is it to you, as a mentor, to build good relationships with your mentees?"
+- [**Structure**]{style="color:#C0522A;"}: clear routines, expectations, and follow-through.
+  - *Survey item:* "How important is it to you, as a mentor, to set clear expectations for how your team works together?"
+
+**Polarity:** Structure ↔ Support.
+
+**Measure:** Mentoring Style Values Inventory (importance-rated; adapted from Ertesvåg, 2011).
+Eight items, four per subscale, rated 1–10 for importance under a 40-point budget that
+forces you to prioritize.
+
+**Typology.** Crossing the two dimensions gives four mentoring styles. Neither dimension is
+"good" or "bad" on its own; it is the *combination* that describes how you show up:
+
+| | **Low Support** | **High Support** |
+|---|---|---|
+| **High Structure** | **Authoritarian:** high expectations, little warmth. Clear and demanding, but mentees may not feel safe asking for help. | **Authoritative:** high expectations *and* high warmth. Clear structure that mentees experience as being on their side. |
+| **Low Structure** | **Uninvolved:** low on both. Mentees are largely left to themselves. | **Permissive:** warm and caring, but loose on expectations. Mentees feel supported but may drift. |
+
+::: {.callout-tip}
+## In Class
+Watch how you balance warmth and structure when your team sets its first expectations.
+:::
+
+## Your Scores {.unnumbered}
+
+Find your password below.
+
+```{r}
+#| label: wk01-mentoring-style-compute
+#| include: false
+w1 <- dat |> transmute(Password = PASSWORD,
+  Support   = rowMeans(across(W1_1:W1_4)),
+  Structure = rowMeans(across(W1_5:W1_8)))
+```
+
+```{r}
+#| label: wk01-mentoring-style-table
+#| echo: false
+score_table(w1$Password, list(Support=w1$Support, Structure=w1$Structure),
+  "1. Mentoring: your composite scores (1–10)",
+  extra = list(Style = style_type(w1$Support, w1$Structure)))
+```
+
+## Class Distribution {.unnumbered}
+
+```{r}
+#| label: wk01-mentoring-style-plot
+#| echo: false
+#| fig-width: 9
+#| fig-height: 3.8
+norm_facets(list(Support=w1$Support, Structure=w1$Structure), xlab="Importance (1–10)", scale = c(1, 10))
+```
+
+## Your Mentoring Style {.unnumbered}
+
+Each dot is one peer mentor. The dashed lines are the **class medians** on each dimension, so
+"high" and "low" here mean *relative to your classmates*, not relative to the 1–10 scale.
+Almost everyone rates both dimensions as important, so a scale-midpoint split would put the
+whole class in one corner. Find your **Style** in the table above, then find your quadrant.
+
+```{r}
+#| label: wk01-mentoring-style-typology
+#| echo: false
+#| fig-width: 7
+#| fig-height: 5.4
+typology_plot(w1$Support, w1$Structure)
+```
+
+::: {.callout-note}
+## Your style is a snapshot, not a label
+The median split means roughly a quarter of the class lands in each quadrant *by construction*.
+If you sit close to a dashed line, small changes in a few answers would move you. Read the
+quadrant as a description of your current balance, not a fixed type.
+:::
+
+
+## Reflect
+
+::: {.callout-warning}
+## Journal
+- **Score:** How does reflecting on your score help you think about who you are as a mentor?
+- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+:::
+

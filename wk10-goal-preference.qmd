@@ -1,0 +1,32 @@
+# 10. Goal Preference {.unnumbered}
+
+**Big Question:** *What is your goal orientation?*
+
+**Constructs:**
+
+- **Evaluative ↔ Developmental**: whether assessment exists to judge the work or to improve it.
+  - *Survey item:* items pending.
+- **Process focus ↔ Outcome focus**: whether you steer by how the work is done or by what
+  it produces.
+  - *Survey item:* items pending.
+- **Learning ↔ Performance**: whether you pursue goals to grow or to demonstrate ability.
+  - *Survey item:* items pending.
+
+**Polarity:** Evaluative ↔ Developmental; Process ↔ Outcome.
+
+**Measure:** Teachers' Conceptions of Assessment (Brown, 2006); Outcome and Process Scale
+(2017); Work Domain Goal Orientation (VandeWalle, 1997).
+
+::: {.callout-note}
+## Measure pending
+All three instruments are copyrighted and have not yet been sourced. The OPS citation also
+needs to be confirmed.
+:::
+
+## Reflect
+
+::: {.callout-warning}
+## Journal
+- **Score:** How does reflecting on your score help you think about who you are as a mentor?
+- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+:::

@@ -1,0 +1,24 @@
+# Quarto build cache (docs/ is intentionally tracked: GitHub Pages serves it)
+.quarto/
+*_files/figure-html/.gitkeep
+
+# Quarto SCSS analysis artifact (regenerated on every render; harmless)
+_quarto_internal_scss_error.scss
+
+# Superseded first-draft chapters, kept locally only
+_archive/
+
+# R
+.Rhistory
+.Rproj.user/
+.Rdata
+.httr-oauth
+
+# macOS
+.DS_Store
+
+# Local Claude Code settings
+.claude/
+
+/.quarto/
+**/*.quarto_ipynb

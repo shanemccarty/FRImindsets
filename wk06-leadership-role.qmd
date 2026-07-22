@@ -1,0 +1,30 @@
+# 6. Leadership Role {.unnumbered}
+
+**Big Question:** *Is your team's leadership positional or shared?*
+
+**Constructs:**
+
+- **Positional / formal leadership**: leadership that comes from an assigned role and sits
+  with one person.
+  - *Survey item:* items pending.
+- **Shared / informal leadership**: leadership that is distributed across the team and
+  emerges from the work.
+  - *Survey item:* items pending.
+
+**Polarity:** Positional/Formal ↔ Shared/Informal.
+
+**Measure:** SPLIT, full inventory (Grille & Kauffeld, 2015; cf. Hiller et al., 2006).
+
+::: {.callout-note}
+## Measure pending
+The full SPLIT adds change-oriented and micropolitical subscales beyond the task and
+relation subscales you complete in Week 7. Those items have not yet been sourced.
+:::
+
+## Reflect
+
+::: {.callout-warning}
+## Journal
+- **Score:** How does reflecting on your score help you think about who you are as a mentor?
+- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+:::

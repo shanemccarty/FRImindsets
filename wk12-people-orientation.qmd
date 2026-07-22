@@ -1,0 +1,60 @@
+# 12. People Orientation {.unnumbered}
+
+```{r}
+#| include: false
+source("_setup.R")
+```
+
+**Big Question:** *What is your view of people?*
+
+**Constructs:** An implicit theory is your working assumption about whether people can
+change. It matters for mentoring because it shapes how you read a struggling mentee.
+
+- **Growth orientation**: people's basic characteristics can substantially change.
+  - *Survey item:* "Everyone, no matter who they are, can significantly change their basic characteristics."
+- **Fixed orientation**: the important parts of who someone is cannot really be changed.
+  - *Survey item:* "The kind of person someone is, is something very basic about them and it can't be changed very much."
+
+**Polarity:** Fixed ↔ Growth.
+
+**Measure:** 'Kind of Person' Implicit Theory Scale (Dweck, 1999). Eight items rated 1–6.
+Fixed-mindset items are reverse-scored, so a higher composite means a stronger **growth
+mindset**.
+
+## Your Scores {.unnumbered}
+
+Find your password below.
+
+```{r}
+#| label: wk12-people-orientation-compute
+#| include: false
+w12 <- dat |> transmute(Password = PASSWORD,
+  `Growth mindset` = rowMeans(cbind(7-W12_1, 7-W12_2, W12_3, 7-W12_4,
+                                    W12_5, 7-W12_6, W12_7, W12_8)))
+```
+
+```{r}
+#| label: wk12-people-orientation-table
+#| echo: false
+score_table(w12$Password, list(`Growth mindset`=w12$`Growth mindset`),
+  "12. People Orientation: your growth mindset composite (1–6)")
+```
+
+## Class Distribution {.unnumbered}
+
+```{r}
+#| label: wk12-people-orientation-plot
+#| echo: false
+#| fig-width: 6
+#| fig-height: 3.8
+norm_facets(list(`Growth mindset`=w12$`Growth mindset`), xlab="Growth mindset (1–6)",
+  scale = c(1, 6))
+```
+
+## Reflect
+
+::: {.callout-warning}
+## Journal
+- **Score:** How does reflecting on your score help you think about who you are as a mentor?
+- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+:::

@@ -1,0 +1,34 @@
+# 8. Inclusive Mentoring {.unnumbered}
+
+**Big Question:** *Is your mentoring inclusive?*
+
+**Constructs:**
+
+- **Culturally aware mentorship**: your confidence in raising, noticing, and responding to
+  race and ethnicity as they shape a mentee's research experience.
+  - *Survey item:* "Provide opportunities for mentees to talk about their racial/ethnic identity as it relates to their research experience when appropriate."
+- **Noticing harm**: recognizing moments in the mentoring relationship that could land as
+  dismissive or stereotyping.
+  - *Survey item:* "Notice interactions in the mentorship relationship that could be insulting or dismissive to mentees because of their race/ethnicity."
+
+**Polarity:** Colorblind ↔ Culturally aware.
+
+**Measure:** Culturally Aware Mentorship (CAM) Self-Efficacy, mentor form (Byars-Winston &
+Butz, 2021). Five items rated 1 = Not confident at all to 5 = Completely confident. Free via
+the WCER Measures Library.
+
+::: {.callout-note}
+## Measure proposed, not yet confirmed
+Table 1 lists this week as TBD. The CAM scale is proposed here because it is brief, validated,
+freely available, and written for **research** mentoring specifically. Your MCA · Addressing
+Diversity subscale (2 items, collected at Kickoff) is the fallback if CAM is not adopted.
+Confirm before the survey is built.
+:::
+
+## Reflect
+
+::: {.callout-warning}
+## Journal
+- **Score:** How does reflecting on your score help you think about who you are as a mentor?
+- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+:::

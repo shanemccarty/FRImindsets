@@ -1,0 +1,30 @@
+# 5. Feedback Purpose {.unnumbered}
+
+**Big Question:** *Is your feedback preference developmental or summative?*
+
+**Constructs:**
+
+- **Surface ↔ Substantive**: whether feedback addresses presentation and mechanics or the
+  underlying reasoning.
+  - *Survey item:* items pending.
+- **Developmental ↔ Summative**: whether feedback is given to improve the work or to
+  judge it.
+  - *Survey item:* items pending.
+
+**Polarity:** Surface ↔ Substantive; Developmental ↔ Summative.
+
+**Measure:** Dual-Role Feedback Orientation Scale · giving-feedback (2025); Teachers'
+Conceptions of Assessment · Improvement vs. Accountability (Brown, 2006).
+
+::: {.callout-note}
+## Measure pending
+Both instruments are copyrighted and have not yet been sourced.
+:::
+
+## Reflect
+
+::: {.callout-warning}
+## Journal
+- **Score:** How does reflecting on your score help you think about who you are as a mentor?
+- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+:::

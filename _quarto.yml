@@ -1,0 +1,54 @@
+project:
+  type: book
+  output-dir: docs
+  render:
+    - index.qmd
+    - wk01-mentoring-style.qmd
+    - wk02-motivational-style.qmd
+    - wk03-leadership-focus.qmd
+    - wk04-feedback-plus-minus.qmd
+    - wk05-feedback-purpose.qmd
+    - wk06-leadership-role.qmd
+    - wk07-leadership-target.qmd
+    - wk08-inclusive-mentoring.qmd
+    - wk09-conflict-mediator.qmd
+    - wk10-goal-preference.qmd
+    - wk11-communicator.qmd
+    - wk12-people-orientation.qmd
+    - wk13-self-awareness.qmd
+    - wk14-paradoxical.qmd
+    - wk15-competency.qmd
+    - references.qmd
+
+book:
+  title: "FRI Peer Mentor Mindsets Guide"
+  author:
+    - "Shane McCarty"
+    - "Caitlin Light"
+    - "Zihan Hei"
+    - "Megan Fegley"
+  date: today
+  chapters:
+    - index.qmd
+    - wk01-mentoring-style.qmd
+    - wk02-motivational-style.qmd
+    - wk03-leadership-focus.qmd
+    - wk04-feedback-plus-minus.qmd
+    - wk05-feedback-purpose.qmd
+    - wk06-leadership-role.qmd
+    - wk07-leadership-target.qmd
+    - wk08-inclusive-mentoring.qmd
+    - wk09-conflict-mediator.qmd
+    - wk10-goal-preference.qmd
+    - wk11-communicator.qmd
+    - wk12-people-orientation.qmd
+    - wk13-self-awareness.qmd
+    - wk14-paradoxical.qmd
+    - wk15-competency.qmd
+    - references.qmd
+
+format:
+  html:
+    theme: [cosmo, theme.scss]
+    toc: true
+    number-sections: false

@@ -1,0 +1,10 @@
+/*-- scss:defaults --*/
+$primary: #005A43;   // Binghamton green (PMS 342)
+$link-color: #005A43;
+$body-color: #222222;
+
+/*-- scss:rules --*/
+h1,h2,h3,h4,.sidebar-title { color:#005A43; }
+.sidebar { border-right:2px solid #D9E8E1; }
+a:hover { color:#00805D; }
+.callout.callout-style-default { border-left-color:#005A43; }

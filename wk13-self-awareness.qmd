@@ -1,0 +1,56 @@
+# 13. Self-Awareness {.unnumbered}
+
+**Big Question:** *What is your self-awareness type?*
+
+**Constructs:** **Dr. Tasha Eurich** conceptualized this self-awareness model and its four
+types, based on a large-scale research program reported in *Insight* (2017) and in the
+*Harvard Business Review* (Eurich, 2018). Her team found that self-awareness splits into two
+dimensions that are **largely unrelated to each other**: being high on one says almost nothing
+about the other. Most people believe they are self-aware; Eurich estimates only **10 to 15%**
+actually meet the criteria.
+
+- [**Internal self-awareness**]{style="color:#007F85;"}: how clearly you see your own values,
+  passions, aspirations, reactions, strengths and weaknesses, and your impact on others.
+  - *Survey item:* items pending.
+- [**External self-awareness**]{style="color:#C0522A;"}: how well you understand the way
+  other people actually see you, on those same factors.
+  - *Survey item:* items pending.
+
+**Polarity:** Internal ↔ External self-awareness.
+
+**Measure:** Self-Reflection & Insight Scale · Insight (Grant, Franklin & Langford, 2002) for
+the internal dimension; MCA · Fostering Independence (Fleming et al., 2013). Eurich's model is
+a **framework**, not a published self-report scale, so the external dimension still needs a
+sourced instrument.
+
+**Typology.** Crossing the two dimensions gives Eurich's four self-awareness types. As in
+Week 1, the useful move is not picking a side but raising both:
+
+| | **Low External** | **High External** |
+|---|---|---|
+| **High Internal** | **Introspectors:** clear on who they are, but they do not challenge their own views or seek feedback, so blind spots persist. | **Aware:** know who they are and what they want, and actively seek and value how others see them. |
+| **Low Internal** | **Seekers:** do not yet know who they are, what they stand for, or how their team sees them. Often feel stuck or frustrated. | **Pleasers:** so focused on how they come across that they lose track of what matters to them, and drift into choices that do not serve them. |
+
+::: {.callout-tip}
+## In Class
+Both dimensions are trainable, and they are trained differently. Internal self-awareness grows
+through better introspection. Eurich's research found that asking **"what"** rather than
+**"why"** is what makes introspection productive: "why" invites rationalizing, "what" points
+at something you can act on. External self-awareness grows only by asking people who will tell
+you the truth.
+:::
+
+::: {.callout-note}
+## Measure pending
+The MCA · Fostering Independence items are already collected at Kickoff. The SRIS · Insight
+items have not yet been sourced, and no instrument has been selected for the external
+dimension.
+:::
+
+## Reflect
+
+::: {.callout-warning}
+## Journal
+- **Score:** Which of the four types best describes you right now, and what would move you toward Aware?
+- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+:::

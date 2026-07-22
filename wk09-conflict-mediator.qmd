@@ -1,0 +1,69 @@
+# 9. Conflict Mediator {.unnumbered}
+
+**Big Question:** *What is your conflict resolution style?*
+
+**Constructs:** Conflict is simply the condition where two people's concerns appear
+incompatible. It is not the same as fighting, and it is not automatically destructive. Two
+dimensions describe how you handle it: **assertiveness** (how far you try to satisfy your own
+concerns) and **cooperativeness** (how far you try to satisfy the other person's). Crossing
+them gives five styles. **No style is wrong.** Each one works well in some situations and
+costs you in others.
+
+- [**Competing**]{style="color:#C0522A;"}: assertive and uncooperative. You pursue your own
+  concerns at the other person's expense.
+  - *Survey item:* "I push my own point of view."
+- [**Collaborating**]{style="color:#007F85;"}: assertive and cooperative. You look for a
+  win-win that completely satisfies both people's concerns.
+  - *Survey item:* "I examine issues until I find a solution that really satisfies me and the other party."
+- [**Compromising**]{style="color:#6B6B6B;"}: intermediate on both. You find an acceptable solution that only partly
+  satisfies both people's concerns.
+  - *Survey item:* "I try to realize a middle-of-the-road solution."
+- [**Avoiding**]{style="color:#817300;"}: unassertive and uncooperative. You sidestep the
+  conflict without trying to satisfy either person's concerns.
+  - *Survey item:* "I avoid confrontation about our differences."
+- [**Accommodating**]{style="color:#AE518E;"}: unassertive and cooperative. You satisfy the
+  other person's concerns at the expense of your own.
+  - *Survey item:* "I give in to the wishes of the other party."
+
+**Polarity:** Win/Avoid ↔ Understand/Resolve, across five styles.
+
+**Measure:** Dutch Test for Conflict Handling (DUTCH; De Dreu, Evers, Beersma, Kluwer &
+Nauta, 2001), short form. Fifteen items, three per style, rated 1 = Not at all to
+5 = Very much. Each style is scored as the mean of its three items, so you get a **profile
+across all five** rather than a single label.
+
+## When each style fits {.unnumbered}
+
+Every mode has benefits and costs. The skill is knowing when to use each one, not defaulting
+to a favorite.
+
+| Style | Works well when | Costs you when |
+|---|---|---|
+| **Competing** | The issue is critical, you are clearly right, or a fast decision is needed | Overused: strained relationships, worse decisions, less buy-in from your team |
+| **Collaborating** | The stakes are high enough to justify the time and both sets of concerns matter | The issue is trivial, or there is no time |
+| **Compromising** | You need a workable answer quickly and both sides can give a little | It becomes the reflex, and nobody's real concern gets met |
+| **Avoiding** | The issue is minor, tempers are hot, or you need time to gather information | The problem festers and your mentees read the silence as indifference |
+| **Accommodating** | You are wrong, the issue matters far more to them, or preserving the relationship is the priority | Your own concerns disappear and your credibility erodes |
+
+::: {.callout-note}
+## On the measure
+The five styles come from the **Thomas-Kilmann Conflict Mode Instrument (TKI)** framework.
+The TKI itself is commercially licensed, so this guide uses the **DUTCH**, a published and
+validated instrument covering the same five styles, drawn from concern-for-self and
+concern-for-others. Items are verbatim; the short form uses three of the four to five items
+per style, so reliability should be re-checked on this sample before results are reported
+anywhere beyond this guide.
+:::
+
+::: {.callout-tip}
+## In Class
+Role play practice.
+:::
+
+## Reflect
+
+::: {.callout-warning}
+## Journal
+- **Score:** Which style is your highest, and which situations does it serve well or poorly?
+- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+:::

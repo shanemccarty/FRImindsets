@@ -1,0 +1,64 @@
+# 3. Leadership Focus {.unnumbered}
+
+```{r}
+#| include: false
+source("_setup.R")
+```
+
+**Big Question:** *Is your leadership style to promote or prevent for the team?*
+
+**Constructs:** The same regulatory focus from Week 2, now applied to how you lead. Each
+pole covers the same four leadership functions: goal framing, problem solving, error
+management, and feedback.
+
+- [**Promotion Leadership**]{style="color:#5A71A8;"}: frames goals around gains, builds on
+  what works, encourages useful risks, and affirms what is going well.
+  - *Survey item:* "I motivate my team by framing our goals around the gains and growth we can achieve."
+- [**Prevention Leadership**]{style="color:#453A98;"}: frames goals around setbacks to
+  avoid, fixes what is going wrong, emphasizes accuracy, and corrects errors.
+  - *Survey item:* "I motivate my team by framing our goals around the problems and setbacks we need to avoid."
+
+**Polarity:** Promotion ↔ Prevention (team leadership).
+
+**Measure:** Promotion/Prevention Team Leadership Scale (adapted from regulatory focus
+theory). Eight items rated 1–9, four per subscale.
+
+## Your Scores {.unnumbered}
+
+Find your password below.
+
+```{r}
+#| label: wk03-leadership-focus-compute
+#| include: false
+w3 <- dat |> transmute(Password = PASSWORD,
+  `Promotion Leadership`  = rowMeans(across(W3_1:W3_4)),
+  `Prevention Leadership` = rowMeans(across(W3_5:W3_8)))
+```
+
+```{r}
+#| label: wk03-leadership-focus-table
+#| echo: false
+score_table(w3$Password, list(`Promotion Leadership`=w3$`Promotion Leadership`,
+  `Prevention Leadership`=w3$`Prevention Leadership`),
+  "3. Leadership I: your composite scores (1–9)")
+```
+
+## Class Distribution {.unnumbered}
+
+```{r}
+#| label: wk03-leadership-focus-plot
+#| echo: false
+#| fig-width: 9
+#| fig-height: 3.8
+norm_facets(list(`Promotion Leadership`=w3$`Promotion Leadership`,
+  `Prevention Leadership`=w3$`Prevention Leadership`), xlab="Score (1–9)",
+  scale = c(1, 9))
+```
+
+## Reflect
+
+::: {.callout-warning}
+## Journal
+- **Score:** How does reflecting on your score help you think about who you are as a mentor?
+- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+:::

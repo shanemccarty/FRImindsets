@@ -1,0 +1,29 @@
+# 4. +/- Feedback {.unnumbered}
+
+**Big Question:** *Is your feedback preference supportive or corrective?*
+
+**Constructs:**
+
+- **Supportive feedback**: feedback framed to affirm, encourage, and build on what is working.
+  - *Survey item:* items pending.
+- **Corrective feedback**: feedback framed to identify and fix what is going wrong.
+  - *Survey item:* items pending.
+
+**Polarity:** Supportive ↔ Corrective.
+
+**Measure:** Feedback Orientation Scale · Accountability + Utility (Linderbaum & Levy, 2010).
+
+::: {.callout-note}
+## Measure pending
+The FOS items are copyrighted and have not yet been sourced. Once the items are added, this
+chapter will show a class distribution and a password lookup table like the completed chapters.
+A verified sample item from the published scale: *"I find that feedback is critical for reaching my goals."*
+:::
+
+## Reflect
+
+::: {.callout-warning}
+## Journal
+- **Score:** How does reflecting on your score help you think about who you are as a mentor?
+- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+:::

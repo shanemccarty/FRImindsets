@@ -1,0 +1,31 @@
+# 14. Paradoxical {.unnumbered}
+
+**Big Question:** *What is your thinking style?*
+
+**Constructs:** Paradox is the **meta-mindset** of this guide. Every earlier week gave you a
+polarity, and the mentor move was never to pick a side but to hold both at once: support
+*and* structure, promotion *and* prevention, task *and* relationship.
+
+- **Either/or thinking**: treating a tension as a choice between two options.
+  - *Survey item:* items pending.
+- **Both/and thinking**: treating a tension as two things to be held together, and finding
+  that the conflict itself is informative.
+  - *Survey item:* "When I consider conflicting perspectives, I gain a better understanding of an issue."
+
+**Polarity:** Either/or ↔ Both/and.
+
+**Measure:** Paradox Mindset Scale, 9 items (Miron-Spektor et al., 2018).
+
+::: {.callout-note}
+## Measure pending
+The Paradox Mindset Scale is copyrighted and the full item set has not yet been sourced. The
+example item above is verified from the published article.
+:::
+
+## Reflect
+
+::: {.callout-warning}
+## Journal
+- **Score:** How does reflecting on your score help you think about who you are as a mentor?
+- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+:::

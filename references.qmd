@@ -1,6 +1,8 @@
 # Measures & References {.unnumbered}
 
-All measures are drawn from existing, validated instruments (no author-created items). See the
+All measures are drawn from existing, validated instruments, with one documented exception:
+the Week 4 Feedback Orientation items are author-created for this course (no validated bipolar
+supportive/corrective scale exists). See the
 companion strategy document (*FRI PM Mindsets Strategy*) for the full item bank, scoring, and
 access status.
 
@@ -12,7 +14,7 @@ access status.
 | 1 | Mentoring Style | Mentoring Style Values Inventory (adapted from Ertesvåg, 2011) | Adapted |
 | 2 | Motivational Style | Mentoring Regulatory Focus 2×2 (adapted; Higgins, 1997; Lockwood et al., 2002) | Adapted |
 | 3 | Leadership Focus | Promotion/Prevention Team Leadership Scale (adapted) | Adapted |
-| 4 | Feedback Orientation | Feedback Orientation Scale · Accountability + Utility (Linderbaum & Levy, 2010) | © |
+| 4 | Feedback Orientation | Feedback Orientation, bipolar (author-created for this course) | Author-created |
 | 5 | Feedback Purpose | Dual-Role FOS (2025); Teachers' Conceptions of Assessment (Brown, 2006) | © |
 | 6 | Leadership Role | SPLIT, full inventory (Grille & Kauffeld, 2015; cf. Hiller et al., 2006) | © |
 | 7 | Leadership Target | SPLIT · task & relation subscales (Grille & Kauffeld, 2015) | © |
@@ -75,9 +77,6 @@ Higgins, E. T. (1997). Beyond pleasure and pain. *American Psychologist, 52*(12)
 
 Hiller, N. J., Day, D. V., & Vance, R. J. (2006). Collective enactment of leadership roles.
 *The Leadership Quarterly, 17*, 387–397.
-
-Linderbaum, B. A., & Levy, P. E. (2010). The development and validation of the Feedback
-Orientation Scale. *Journal of Management, 36*(6), 1372–1405.
 
 Lockwood, P., Jordan, C. H., & Kunda, Z. (2002). Motivation by positive or negative role
 models. *Journal of Personality and Social Psychology, 83*(4), 854–864.

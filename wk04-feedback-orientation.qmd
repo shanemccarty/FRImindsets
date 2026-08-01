@@ -1,29 +1,80 @@
 # 4. Feedback Orientation {.unnumbered}
 
+```{r}
+#| include: false
+source("_setup.R")
+```
+
 **Big Question:** *Is your feedback preference supportive or corrective?*
 
-**Constructs:**
+**Constructs:** Feedback orientation is a single **bipolar** dimension. It is not about how
+much feedback you give, but about which way you lean when you give it. Neither end is better;
+mentees need both, and the useful skill is knowing which one a moment calls for.
 
-- **Supportive feedback**: feedback framed to affirm, encourage, and build on what is working.
-  - *Survey item:* items pending.
-- **Corrective feedback**: feedback framed to identify and fix what is going wrong.
-  - *Survey item:* items pending.
+- [**Corrective**]{style="color:#985BA3;"} (the low end): feedback aimed at what needs fixing,
+  the gap between the work and the standard.
+  - *Survey item:* "I focus on mistakes to correct" (vs. "I focus on strengths to build on").
+- [**Supportive**]{style="color:#477F2B;"} (the high end): feedback aimed at affirming and
+  encouraging, building on what is already working.
+  - *Survey item:* "My instinct is to affirm and encourage" (vs. "My instinct is to close the gap to the standard").
 
-**Polarity:** Supportive ↔ Corrective.
+**Polarity:** Corrective ↔ Supportive.
 
-**Measure:** Feedback Orientation Scale · Accountability + Utility (Linderbaum & Levy, 2010).
+**Measure:** Feedback Orientation, bipolar (author-created for this course). Three
+semantic-differential items rated 1–7, where **1 = fully corrective** and **7 = fully
+supportive**. Your score is the mean of the three items, so **4 is balanced**, below 4 leans
+corrective, and above 4 leans supportive.
 
-::: {.callout-note}
-## Measure pending
-The FOS items are copyrighted and have not yet been sourced. Once the items are added, this
-chapter will show a class distribution and a password lookup table like the completed chapters.
-A verified sample item from the published scale: *"I find that feedback is critical for reaching my goals."*
+## Your Scores {.unnumbered}
+
+Find your password below.
+
+```{r}
+#| label: wk04-feedback-orientation-compute
+#| include: false
+w4 <- dat |> transmute(Password = PASSWORD,
+  `Feedback orientation` = rowMeans(across(W4_1:W4_3)))
+# cutoffs sit between the discrete 1/3-steps a 3-item mean can take, so the
+# label always matches the rounded score shown in the table.
+lean4 <- factor(dplyr::case_when(
+  w4$`Feedback orientation` > 4.5 ~ "Supportive-leaning",
+  w4$`Feedback orientation` < 3.5 ~ "Corrective-leaning",
+  TRUE                            ~ "Balanced"),
+  levels = c("Corrective-leaning", "Balanced", "Supportive-leaning"))
+```
+
+```{r}
+#| label: wk04-feedback-orientation-table
+#| echo: false
+score_table(w4$Password, list(`Feedback orientation`=w4$`Feedback orientation`),
+  "4. Feedback Orientation: your bipolar score (1 = corrective … 7 = supportive)",
+  extra = list(Lean = lean4))
+```
+
+## Class Distribution {.unnumbered}
+
+```{r}
+#| label: wk04-feedback-orientation-plot
+#| echo: false
+#| fig-width: 8
+#| fig-height: 4
+norm_facets(list(`Feedback orientation`=w4$`Feedback orientation`),
+  xlab="Feedback orientation", scale = c(1, 7),
+  labels = c("1\nCorrective","2","3","4\nBalanced","5","6","7\nSupportive"))
+```
+
+::: {.callout-important}
+## About this measure
+No validated self-report scale exists for this bipolar dimension, so these three items were
+**written for this course**. They are grounded in the supportive/corrective feedback
+distinction but are not a published instrument. Pilot and check reliability before reporting
+results anywhere beyond this guide.
 :::
 
 ## Reflect
 
 ::: {.callout-warning}
 ## Journal
-- **Score:** How does reflecting on your score help you think about who you are as a mentor?
+- **Score:** Where do you land, and does that match how you *want* to show up for your mentees?
 - **Behavior:** What is one thing you will commit to this week that reflects this mindset?
 :::

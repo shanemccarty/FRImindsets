@@ -100,3 +100,12 @@ conflict_col <- c(
   Avoiding      = "#817300",   # olive,  4.79:1
   Accommodating = "#AE518E"    # plum,   4.81:1
 )
+
+# ---- Week 4 feedback orientation (bipolar) ----------------------------------
+# One bipolar dimension. Its own pair, held clear of every other palette hue so
+# Feedback is not mistaken for another chapter: green (H120) and violet (H300)
+# sit >=30 degrees from all other hues and are 180 apart. Both clear WCAG AA.
+feedback_col <- c(
+  Supportive = "#477F2B",   # green,  4.84:1
+  Corrective = "#985BA3"    # violet, 4.82:1
+)

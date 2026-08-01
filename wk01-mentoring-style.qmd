@@ -7,7 +7,9 @@ source("_setup.R")
 
 **Big Question:** *Does your style focus on structure or support?*
 
-**Constructs:** Authoritative mentoring blends two things at once:
+## The Mindset(s) {.unnumbered}
+
+Authoritative mentoring blends two things at once:
 
 - [**Support**]{style="color:#007F85;"}: warmth, care, and responsiveness toward your mentees.
   - *Survey item:* "How important is it to you, as a mentor, to build good relationships with your mentees?"
@@ -17,23 +19,18 @@ source("_setup.R")
 **Polarity:** Structure ↔ Support.
 
 **Measure:** Mentoring Style Values Inventory (importance-rated; adapted from Ertesvåg, 2011).
-Eight items, four per subscale, rated 1–10 for importance under a 40-point budget that
-forces you to prioritize.
+Eight items, four per subscale, rated 1–10 for importance under a 40-point budget that forces you to prioritize.
 
-**Typology.** Crossing the two dimensions gives four mentoring styles. Neither dimension is
-"good" or "bad" on its own; it is the *combination* that describes how you show up:
+## Your Type {.unnumbered}
 
-| | **Low Support** | **High Support** |
+Structure and support are two dimensions that result in four mentoring styles. Neither dimension is "good" or "bad" on its own; it is the *combination* that describes how you show up as a mentor:
+
+| | **Low Support** | [**High Support**]{style="color:#007F85;"} |
 |---|---|---|
-| **High Structure** | **Authoritarian:** high expectations, little warmth. Clear and demanding, but mentees may not feel safe asking for help. | **Authoritative:** high expectations *and* high warmth. Clear structure that mentees experience as being on their side. |
+| [**High Structure**]{style="color:#C0522A;"}| **Authoritarian:** high expectations, little warmth. Clear and demanding, but mentees may not feel safe asking for help. | [**Authoritative:**]{style="color:#005A43;"} high expectations *and* high warmth. Clear structure that mentees experience as being on their side. |
 | **Low Structure** | **Uninvolved:** low on both. Mentees are largely left to themselves. | **Permissive:** warm and caring, but loose on expectations. Mentees feel supported but may drift. |
 
-::: {.callout-tip}
-## In Class
-Watch how you balance warmth and structure when your team sets its first expectations.
-:::
-
-## Your Scores {.unnumbered}
+## Find Your Score {.unnumbered}
 
 Find your password below.
 
@@ -53,7 +50,9 @@ score_table(w1$Password, list(Support=w1$Support, Structure=w1$Structure),
   extra = list(Style = style_type(w1$Support, w1$Structure)))
 ```
 
-## Class Distribution {.unnumbered}
+## Locate Your Score {.unnumbered}
+
+Scores for all peer mentors are visualized below. Locate your score relative to your peers.
 
 ```{r}
 #| label: wk01-mentoring-style-plot
@@ -79,18 +78,20 @@ typology_plot(w1$Support, w1$Structure)
 ```
 
 ::: {.callout-note}
-## Your style is a snapshot, not a label
+## Your style is a snapshot, not a fixed type
 The median split means roughly a quarter of the class lands in each quadrant *by construction*.
-If you sit close to a dashed line, small changes in a few answers would move you. Read the
-quadrant as a description of your current balance, not a fixed type.
+If you sit close to a dashed line, small changes in a few answers would move you. Each quadrant is a rough approximation of your balance between structure and support. This is not a fixed type! You can change your attention and behaviors to move from one quadrant to another over time.  
 :::
 
-
-## Reflect
+## Reflect and Plan
 
 ::: {.callout-warning}
 ## Journal
 - **Score:** How does reflecting on your score help you think about who you are as a mentor?
-- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+- **Behavior:** To be the best mentor you can be, what is one new thing you will try to do this week for mentees and/or your team?
 :::
 
+::: {.callout-tip}
+## During Class
+Make note of how you provide mentees with both support and structure before, during, and after class 
+:::

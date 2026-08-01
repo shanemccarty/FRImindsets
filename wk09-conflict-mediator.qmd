@@ -2,12 +2,13 @@
 
 **Big Question:** *What is your conflict resolution style?*
 
-**Constructs:** Conflict is simply the condition where two people's concerns appear
-incompatible. It is not the same as fighting, and it is not automatically destructive. Two
-dimensions describe how you handle it: **assertiveness** (how far you try to satisfy your own
-concerns) and **cooperativeness** (how far you try to satisfy the other person's). Crossing
-them gives five styles. **No style is wrong.** Each one works well in some situations and
-costs you in others.
+## The Mindset(s) {.unnumbered}
+
+Conflict is simply the condition where two people's concerns appear incompatible. It is not
+the same as fighting, and it is not automatically destructive. Two dimensions describe how you
+handle it: **assertiveness** (how far you try to satisfy your own concerns) and
+**cooperativeness** (how far you try to satisfy the other person's). Crossing them gives five
+styles. **No style is wrong.** Each one works well in some situations and costs you in others.
 
 - [**Competing**]{style="color:#C0522A;"}: assertive and uncooperative. You pursue your own
   concerns at the other person's expense.
@@ -32,7 +33,7 @@ Nauta, 2001), short form. Fifteen items, three per style, rated 1 = Not at all t
 5 = Very much. Each style is scored as the mean of its three items, so you get a **profile
 across all five** rather than a single label.
 
-## When each style fits {.unnumbered}
+## Your Type {.unnumbered}
 
 Every mode has benefits and costs. The skill is knowing when to use each one, not defaulting
 to a favorite.
@@ -55,15 +56,15 @@ per style, so reliability should be re-checked on this sample before results are
 anywhere beyond this guide.
 :::
 
-::: {.callout-tip}
-## In Class
-Role play practice.
-:::
-
-## Reflect
+## Reflect and Plan
 
 ::: {.callout-warning}
 ## Journal
 - **Score:** Which style is your highest, and which situations does it serve well or poorly?
-- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+- **Behavior:** To be the best mentor you can be, what is one new thing you will try to do this week for mentees and/or your team?
+:::
+
+::: {.callout-tip}
+## UGPM Meeting
+Role play practice.
 :::

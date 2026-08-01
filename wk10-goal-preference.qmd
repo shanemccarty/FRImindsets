@@ -2,7 +2,7 @@
 
 **Big Question:** *What is your goal orientation?*
 
-**Constructs:**
+## The Mindset(s) {.unnumbered}
 
 - **Evaluative ↔ Developmental**: whether assessment exists to judge the work or to improve it.
   - *Survey item:* items pending.
@@ -23,10 +23,15 @@ All three instruments are copyrighted and have not yet been sourced. The OPS cit
 needs to be confirmed.
 :::
 
-## Reflect
+## Reflect and Plan
 
 ::: {.callout-warning}
 ## Journal
 - **Score:** How does reflecting on your score help you think about who you are as a mentor?
-- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+- **Behavior:** To be the best mentor you can be, what is one new thing you will try to do this week for mentees and/or your team?
+:::
+
+::: {.callout-tip}
+## During Class
+Make note of whether you steer your team by the process of the work or by its outcomes.
 :::

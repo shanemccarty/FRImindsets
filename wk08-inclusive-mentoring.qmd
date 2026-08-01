@@ -2,7 +2,7 @@
 
 **Big Question:** *Is your mentoring inclusive?*
 
-**Constructs:**
+## The Mindset(s) {.unnumbered}
 
 - **Culturally aware mentorship**: your confidence in raising, noticing, and responding to
   race and ethnicity as they shape a mentee's research experience.
@@ -25,10 +25,15 @@ Diversity subscale (2 items, collected at Kickoff) is the fallback if CAM is not
 Confirm before the survey is built.
 :::
 
-## Reflect
+## Reflect and Plan
 
 ::: {.callout-warning}
 ## Journal
 - **Score:** How does reflecting on your score help you think about who you are as a mentor?
-- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+- **Behavior:** To be the best mentor you can be, what is one new thing you will try to do this week for mentees and/or your team?
+:::
+
+::: {.callout-tip}
+## During Class
+Make note of moments where a mentee's identity shapes their research experience, and how you respond.
 :::

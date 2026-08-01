@@ -2,7 +2,7 @@
 
 **Big Question:** *Is your feedback preference developmental or summative?*
 
-**Constructs:**
+## The Mindset(s) {.unnumbered}
 
 - **Surface ↔ Substantive**: whether feedback addresses presentation and mechanics or the
   underlying reasoning.
@@ -21,10 +21,15 @@ Conceptions of Assessment · Improvement vs. Accountability (Brown, 2006).
 Both instruments are copyrighted and have not yet been sourced.
 :::
 
-## Reflect
+## Reflect and Plan
 
 ::: {.callout-warning}
 ## Journal
 - **Score:** How does reflecting on your score help you think about who you are as a mentor?
-- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+- **Behavior:** To be the best mentor you can be, what is one new thing you will try to do this week for mentees and/or your team?
+:::
+
+::: {.callout-tip}
+## During Class
+Make note of whether your feedback this week is meant to develop the work or to judge it.
 :::

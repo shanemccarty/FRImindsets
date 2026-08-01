@@ -7,9 +7,10 @@ source("_setup.R")
 
 **Big Question:** *Is your leadership style to promote or prevent for the team?*
 
-**Constructs:** The same regulatory focus from Week 2, now applied to how you lead. Each
-pole covers the same four leadership functions: goal framing, problem solving, error
-management, and feedback.
+## The Mindset(s) {.unnumbered}
+
+The same regulatory focus from Week 2, now applied to how you lead. Each pole covers the same
+four leadership functions: goal framing, problem solving, error management, and feedback.
 
 - [**Promotion Leadership**]{style="color:#5A71A8;"}: frames goals around gains, builds on
   what works, encourages useful risks, and affirms what is going well.
@@ -23,7 +24,7 @@ management, and feedback.
 **Measure:** Promotion/Prevention Team Leadership Scale (adapted from regulatory focus
 theory). Eight items rated 1–9, four per subscale.
 
-## Your Scores {.unnumbered}
+## Find Your Score {.unnumbered}
 
 Find your password below.
 
@@ -40,10 +41,12 @@ w3 <- dat |> transmute(Password = PASSWORD,
 #| echo: false
 score_table(w3$Password, list(`Promotion Leadership`=w3$`Promotion Leadership`,
   `Prevention Leadership`=w3$`Prevention Leadership`),
-  "3. Leadership I: your composite scores (1–9)")
+  "3. Leadership Focus: your composite scores (1–9)")
 ```
 
-## Class Distribution {.unnumbered}
+## Locate Your Score {.unnumbered}
+
+Scores for all peer mentors are visualized below. Locate your score relative to your peers.
 
 ```{r}
 #| label: wk03-leadership-focus-plot
@@ -55,10 +58,15 @@ norm_facets(list(`Promotion Leadership`=w3$`Promotion Leadership`,
   scale = c(1, 9))
 ```
 
-## Reflect
+## Reflect and Plan
 
 ::: {.callout-warning}
 ## Journal
 - **Score:** How does reflecting on your score help you think about who you are as a mentor?
-- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+- **Behavior:** To be the best mentor you can be, what is one new thing you will try to do this week for mentees and/or your team?
+:::
+
+::: {.callout-tip}
+## During Class
+Make note of whether you frame the team's goals around gains to reach or problems to avoid.
 :::

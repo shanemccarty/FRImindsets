@@ -2,20 +2,21 @@
 
 **Big Question:** *What kind of mentor have you become?*
 
+## Looking Back {.unnumbered}
+
 The final week is integration. Look back across your chapters: where did you sit relative to
 the class, and where did your scores shift from pre to post?
+
+## Reflect and Plan
+
+::: {.callout-warning}
+## Journal
+- **Score:** Across the whole semester, where did you grow the most, and where do you still want to grow?
+- **Behavior:** To be the best mentor you can be, what is one new thing you will try to do this week for mentees and/or your team?
+:::
 
 ::: {.callout-tip}
 ## Your mentoring profile
 Your completed chapters become a personal **mentoring profile** (also delivered as a printed
 PDF). Use it to articulate your mentoring philosophy and your plan for future mentoring.
 :::
-
-## Reflect
-
-::: {.callout-warning}
-## Journal
-- **Score:** How does reflecting on your score help you think about who you are as a mentor?
-- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
-:::
-

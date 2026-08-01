@@ -2,9 +2,11 @@
 
 **Big Question:** *What is your thinking style?*
 
-**Constructs:** Paradox is the **meta-mindset** of this guide. Every earlier week gave you a
-polarity, and the mentor move was never to pick a side but to hold both at once: support
-*and* structure, promotion *and* prevention, task *and* relationship.
+## The Mindset(s) {.unnumbered}
+
+Paradox is the **meta-mindset** of this guide. Every earlier week gave you a polarity, and the
+mentor move was never to pick a side but to hold both at once: support *and* structure,
+promotion *and* prevention, task *and* relationship.
 
 - **Either/or thinking**: treating a tension as a choice between two options.
   - *Survey item:* items pending.
@@ -22,10 +24,15 @@ The Paradox Mindset Scale is copyrighted and the full item set has not yet been 
 example item above is verified from the published article.
 :::
 
-## Reflect
+## Reflect and Plan
 
 ::: {.callout-warning}
 ## Journal
 - **Score:** How does reflecting on your score help you think about who you are as a mentor?
-- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+- **Behavior:** To be the best mentor you can be, what is one new thing you will try to do this week for mentees and/or your team?
+:::
+
+::: {.callout-tip}
+## During Class
+Notice a tension you face this week and try holding both sides at once rather than choosing between them.
 :::

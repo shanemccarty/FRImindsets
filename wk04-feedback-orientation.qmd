@@ -7,9 +7,11 @@ source("_setup.R")
 
 **Big Question:** *Is your feedback preference supportive or corrective?*
 
-**Constructs:** Feedback orientation is a single **bipolar** dimension. It is not about how
-much feedback you give, but about which way you lean when you give it. Neither end is better;
-mentees need both, and the useful skill is knowing which one a moment calls for.
+## The Mindset(s) {.unnumbered}
+
+Feedback orientation is a single **bipolar** dimension. It is not about how much feedback you
+give, but about which way you lean when you give it. Neither end is better; mentees need both,
+and the useful skill is knowing which one a moment calls for.
 
 - [**Corrective**]{style="color:#985BA3;"} (the low end): feedback aimed at what needs fixing,
   the gap between the work and the standard.
@@ -25,7 +27,7 @@ semantic-differential items rated 1–7, where **1 = fully corrective** and **7 
 supportive**. Your score is the mean of the three items, so **4 is balanced**, below 4 leans
 corrective, and above 4 leans supportive.
 
-## Your Scores {.unnumbered}
+## Find Your Score {.unnumbered}
 
 Find your password below.
 
@@ -51,7 +53,9 @@ score_table(w4$Password, list(`Feedback orientation`=w4$`Feedback orientation`),
   extra = list(Lean = lean4))
 ```
 
-## Class Distribution {.unnumbered}
+## Locate Your Score {.unnumbered}
+
+Scores for all peer mentors are visualized below. Locate your score relative to your peers.
 
 ```{r}
 #| label: wk04-feedback-orientation-plot
@@ -71,10 +75,15 @@ distinction but are not a published instrument. Pilot and check reliability befo
 results anywhere beyond this guide.
 :::
 
-## Reflect
+## Reflect and Plan
 
 ::: {.callout-warning}
 ## Journal
 - **Score:** Where do you land, and does that match how you *want* to show up for your mentees?
-- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+- **Behavior:** To be the best mentor you can be, what is one new thing you will try to do this week for mentees and/or your team?
+:::
+
+::: {.callout-tip}
+## During Class
+Make note of whether your feedback this week leans corrective or supportive, and whether that fit the moment.
 :::

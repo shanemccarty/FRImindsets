@@ -7,8 +7,10 @@ source("_setup.R")
 
 **Big Question:** *What is your communication style?*
 
-**Constructs:** Nonviolent Communication describes three behaviors that keep a hard
-conversation connected rather than combative.
+## The Mindset(s) {.unnumbered}
+
+Nonviolent Communication describes three behaviors that keep a hard conversation connected
+rather than combative.
 
 - [**Self-connection**]{style="color:#007F85;"}: recognizing that your emotions come from
   your own thoughts and unmet needs, and staying present enough under stress to notice a
@@ -26,12 +28,7 @@ conversation connected rather than combative.
 **Measure:** Nonviolent Communication Behaviors Scale (Cheung et al., 2022). Seven items
 rated 1 = Never to 4 = Frequently.
 
-::: {.callout-tip}
-## In Class
-Role play practice.
-:::
-
-## Your Scores {.unnumbered}
+## Find Your Score {.unnumbered}
 
 Find your password below.
 
@@ -53,7 +50,9 @@ score_table(w11$Password, list(`Self-connection`=w11$`Self-connection`,
   "11. Communicator: your NVCBS composites (1–4)")
 ```
 
-## Class Distribution {.unnumbered}
+## Locate Your Score {.unnumbered}
+
+Scores for all peer mentors are visualized below. Locate your score relative to your peers.
 
 ```{r}
 #| label: wk11-communicator-plot
@@ -66,10 +65,15 @@ norm_facets(list(`Self-connection`=w11$`Self-connection`,
   scale = c(1, 4), labels = c("1\nNever","2\nRarely","3\nSometimes","4\nFrequently"))
 ```
 
-## Reflect
+## Reflect and Plan
 
 ::: {.callout-warning}
 ## Journal
 - **Score:** How does reflecting on your score help you think about who you are as a mentor?
-- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+- **Behavior:** To be the best mentor you can be, what is one new thing you will try to do this week for mentees and/or your team?
+:::
+
+::: {.callout-tip}
+## UGPM Meeting
+Role play practice.
 :::

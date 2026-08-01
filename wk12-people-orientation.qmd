@@ -7,8 +7,10 @@ source("_setup.R")
 
 **Big Question:** *What is your view of people?*
 
-**Constructs:** An implicit theory is your working assumption about whether people can
-change. It matters for mentoring because it shapes how you read a struggling mentee.
+## The Mindset(s) {.unnumbered}
+
+An implicit theory is your working assumption about whether people can change. It matters for
+mentoring because it shapes how you read a struggling mentee.
 
 - **Growth orientation**: people's basic characteristics can substantially change.
   - *Survey item:* "Everyone, no matter who they are, can significantly change their basic characteristics."
@@ -21,7 +23,7 @@ change. It matters for mentoring because it shapes how you read a struggling men
 Fixed-mindset items are reverse-scored, so a higher composite means a stronger **growth
 mindset**.
 
-## Your Scores {.unnumbered}
+## Find Your Score {.unnumbered}
 
 Find your password below.
 
@@ -40,7 +42,9 @@ score_table(w12$Password, list(`Growth mindset`=w12$`Growth mindset`),
   "12. People Orientation: your growth mindset composite (1–6)")
 ```
 
-## Class Distribution {.unnumbered}
+## Locate Your Score {.unnumbered}
+
+Scores for all peer mentors are visualized below. Locate your score relative to your peers.
 
 ```{r}
 #| label: wk12-people-orientation-plot
@@ -51,10 +55,15 @@ norm_facets(list(`Growth mindset`=w12$`Growth mindset`), xlab="Growth mindset (1
   scale = c(1, 6))
 ```
 
-## Reflect
+## Reflect and Plan
 
 ::: {.callout-warning}
 ## Journal
 - **Score:** How does reflecting on your score help you think about who you are as a mentor?
-- **Behavior:** What is one thing you will commit to this week that reflects this mindset?
+- **Behavior:** To be the best mentor you can be, what is one new thing you will try to do this week for mentees and/or your team?
+:::
+
+::: {.callout-tip}
+## During Class
+Make note of when you assume a struggling mentee can grow versus when you write off their ability, and how that shapes your response.
 :::

@@ -6,7 +6,7 @@ project:
     - wk01-mentoring-style.qmd
     - wk02-motivational-style.qmd
     - wk03-leadership-focus.qmd
-    - wk04-feedback-plus-minus.qmd
+    - wk04-feedback-orientation.qmd
     - wk05-feedback-purpose.qmd
     - wk06-leadership-role.qmd
     - wk07-leadership-target.qmd
@@ -33,7 +33,7 @@ book:
     - wk01-mentoring-style.qmd
     - wk02-motivational-style.qmd
     - wk03-leadership-focus.qmd
-    - wk04-feedback-plus-minus.qmd
+    - wk04-feedback-orientation.qmd
     - wk05-feedback-purpose.qmd
     - wk06-leadership-role.qmd
     - wk07-leadership-target.qmd

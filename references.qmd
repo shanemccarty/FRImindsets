@@ -12,7 +12,7 @@ access status.
 | 1 | Mentoring Style | Mentoring Style Values Inventory (adapted from Ertesvåg, 2011) | Adapted |
 | 2 | Motivational Style | Mentoring Regulatory Focus 2×2 (adapted; Higgins, 1997; Lockwood et al., 2002) | Adapted |
 | 3 | Leadership Focus | Promotion/Prevention Team Leadership Scale (adapted) | Adapted |
-| 4 | +/- Feedback | Feedback Orientation Scale · Accountability + Utility (Linderbaum & Levy, 2010) | © |
+| 4 | Feedback Orientation | Feedback Orientation Scale · Accountability + Utility (Linderbaum & Levy, 2010) | © |
 | 5 | Feedback Purpose | Dual-Role FOS (2025); Teachers' Conceptions of Assessment (Brown, 2006) | © |
 | 6 | Leadership Role | SPLIT, full inventory (Grille & Kauffeld, 2015; cf. Hiller et al., 2006) | © |
 | 7 | Leadership Target | SPLIT · task & relation subscales (Grille & Kauffeld, 2015) | © |

@@ -52,7 +52,7 @@ score_table(w1$Password, list(Support=w1$Support, Structure=w1$Structure),
 
 ## Locate Your Score {.unnumbered}
 
-Scores for all peer mentors are visualized below. Locate your score relative to your peers.
+Locate your score(s) relative to other peer mentors!
 
 ```{r}
 #| label: wk01-mentoring-style-plot

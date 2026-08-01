@@ -52,7 +52,7 @@ score_table(w11$Password, list(`Self-connection`=w11$`Self-connection`,
 
 ## Locate Your Score {.unnumbered}
 
-Scores for all peer mentors are visualized below. Locate your score relative to your peers.
+Locate your score(s) relative to other peer mentors!
 
 ```{r}
 #| label: wk11-communicator-plot

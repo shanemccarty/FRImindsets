@@ -5,7 +5,7 @@
 source("_setup.R")
 ```
 
-**Big Question:** *What is your view of people?*
+*What is your view of people?*
 
 ## The Mindset(s) {.unnumbered}
 

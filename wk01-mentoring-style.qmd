@@ -5,7 +5,7 @@
 source("_setup.R")
 ```
 
-**Big Question:** *Does your style focus on structure or support?*
+*Does your style focus on structure or support?*
 
 ## The Mindset(s) {.unnumbered}
 

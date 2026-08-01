@@ -5,7 +5,7 @@
 source("_setup.R")
 ```
 
-**Big Question:** *Is your feedback preference supportive or corrective?*
+*Is your feedback preference supportive or corrective?*
 
 ## The Mindset(s) {.unnumbered}
 

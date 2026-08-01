@@ -5,7 +5,7 @@
 source("_setup.R")
 ```
 
-**Big Question:** *Is your leadership style to promote or prevent for the team?*
+*Is your leadership style to promote or prevent for the team?*
 
 ## The Mindset(s) {.unnumbered}
 

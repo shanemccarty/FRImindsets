@@ -5,7 +5,7 @@
 source("_setup.R")
 ```
 
-**Big Question:** *Is your leadership style task or relational oriented?*
+*Is your leadership style task or relational oriented?*
 
 ## The Mindset(s) {.unnumbered}
 

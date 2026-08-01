@@ -29,7 +29,7 @@ corrective, and above 4 leans supportive.
 
 ## Find Your Score {.unnumbered}
 
-Find your password below.
+Use your password to find your score(s).
 
 ```{r}
 #| label: wk04-feedback-orientation-compute

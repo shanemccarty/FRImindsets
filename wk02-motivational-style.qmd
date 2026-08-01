@@ -31,7 +31,7 @@ scored separately.
 
 ## Find Your Score {.unnumbered}
 
-Find your password below.
+Use your password to find your score(s).
 
 ```{r}
 #| label: wk02-motivational-style-compute

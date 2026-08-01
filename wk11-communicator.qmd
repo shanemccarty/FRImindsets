@@ -30,7 +30,7 @@ rated 1 = Never to 4 = Frequently.
 
 ## Find Your Score {.unnumbered}
 
-Find your password below.
+Use your password to find your score(s).
 
 ```{r}
 #| label: wk11-communicator-compute

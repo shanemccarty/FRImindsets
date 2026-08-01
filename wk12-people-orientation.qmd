@@ -25,7 +25,7 @@ mindset**.
 
 ## Find Your Score {.unnumbered}
 
-Find your password below.
+Use your password to find your score(s).
 
 ```{r}
 #| label: wk12-people-orientation-compute

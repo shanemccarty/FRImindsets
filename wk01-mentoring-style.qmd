@@ -32,7 +32,7 @@ Structure and support are two dimensions that result in four mentoring styles. N
 
 ## Find Your Score {.unnumbered}
 
-Find your password below.
+Use your password to find your score(s).
 
 ```{r}
 #| label: wk01-mentoring-style-compute

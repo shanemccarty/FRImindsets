@@ -26,7 +26,7 @@ theory). Eight items rated 1–9, four per subscale.
 
 ## Find Your Score {.unnumbered}
 
-Find your password below.
+Use your password to find your score(s).
 
 ```{r}
 #| label: wk03-leadership-focus-compute

@@ -41,14 +41,14 @@ week. Each chapter has the distribution for that week's measure and a
 | 2 | Motivational Style | Is my motivational approach to promote or prevent for my mentees' academics or social connection? |
 | 3 | Leadership Focus | Is my leadership style to promote or prevent for the team? |
 | 4 | Feedback Orientation | Is my feedback preference supportive or corrective? |
-| 5 | Feedback Purpose | Is my feedback preference developmental or summative? |
+| 5 | People Orientation | What is my view of people? |
 | 6 | Leadership Role | What is my leadership role? |
 | 7 | Communication Style | What is my communication style? |
 | 8 | Inclusive Mentoring | Is my mentoring inclusive? |
 | 9 | Conflict Style | What is my conflict resolution style? |
 | 10 | Goal Preference | What is my goal orientation? |
 | 11 | Facilitator | How will I facilitate my team's discussion with caring communication? |
-| 12 | People Orientation | What is my view of people? |
+| 12 | Facilitator Reflection | (no mindset; reflect on your facilitation) |
 | 13 | Self-Awareness | What is my self-awareness type? |
 
 ### How to find your scores

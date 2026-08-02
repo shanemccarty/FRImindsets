@@ -1,0 +1,18 @@
+# 12. Facilitator Reflection {.unnumbered}
+
+There will be no mindset this week. Instead, you will reflect on your facilitation of the team
+discussion.
+
+## Reflect and Plan
+
+::: {.callout-warning}
+## Journal
+- **Reflect:** How did your team discussion go? What worked, what was hard, and what did you
+  learn about yourself as a facilitator?
+:::
+
+::: {.callout-tip}
+## UGPM Meeting
+Debrief your facilitation with the group, drawing on what you noticed during and after the
+team discussion.
+:::

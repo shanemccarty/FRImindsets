@@ -146,8 +146,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./wk05-feedback-purpose.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5. Feedback Purpose</span></a>
+  <a href="./wk05-people-orientation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. People Orientation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -188,8 +188,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./wk12-people-orientation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">12. People Orientation</span></a>
+  <a href="./wk12-facilitator-reflection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12. Facilitator Reflection</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -221,14 +221,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#how-to-find-your-scores" id="toc-how-to-find-your-scores" class="nav-link" data-scroll-target="#how-to-find-your-scores">How to find your scores</a></li>
   <li><a href="#how-to-interpret-your-scores" id="toc-how-to-interpret-your-scores" class="nav-link" data-scroll-target="#how-to-interpret-your-scores">How to interpret your scores</a></li>
   </ul></li>
-  </ul></li>
-  <li><a href="#motivational-style" id="toc-motivational-style" class="nav-link" data-scroll-target="#motivational-style">2. Motivational Style</a>
-  <ul class="collapse">
-  <li><a href="#the-mindsets" id="toc-the-mindsets" class="nav-link" data-scroll-target="#the-mindsets">The Mindset(s)</a></li>
-  <li><a href="#find-your-score" id="toc-find-your-score" class="nav-link" data-scroll-target="#find-your-score">Find Your Score</a></li>
-  <li><a href="#locate-your-score" id="toc-locate-your-score" class="nav-link" data-scroll-target="#locate-your-score">Locate Your Score</a></li>
-  <li><a href="#your-motivational-style" id="toc-your-motivational-style" class="nav-link" data-scroll-target="#your-motivational-style">Your Motivational Style</a></li>
-  <li><a href="#reflect-and-plan" id="toc-reflect-and-plan" class="nav-link" data-scroll-target="#reflect-and-plan">Reflect and Plan</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -326,8 +318,8 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td>5</td>
-<td>Feedback Purpose</td>
-<td>Is my feedback preference developmental or summative?</td>
+<td>People Orientation</td>
+<td>What is my view of people?</td>
 </tr>
 <tr class="even">
 <td>6</td>
@@ -361,8 +353,8 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td>12</td>
-<td>People Orientation</td>
-<td>What is my view of people?</td>
+<td>Facilitator Reflection</td>
+<td>(no mindset; reflect on your facilitation)</td>
 </tr>
 <tr class="odd">
 <td>13</td>
@@ -427,130 +419,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 </section>
-</section>
-</section>
-<section id="motivational-style" class="level1 unnumbered">
-<h1 class="unnumbered">2. Motivational Style</h1>
-<pre class="{r}"><code>#| include: false
-source("_setup.R")</code></pre>
-<p><em>Is my motivational approach to promote or prevent for my mentees’ academics or social connection?</em></p>
-<section id="the-mindsets" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="the-mindsets">The Mindset(s)</h2>
-<p>Regulatory focus crosses two dimensions. The <strong>focus</strong> is what you are steering toward, and the <strong>goal</strong> is what you are hoping to attain.</p>
-<ul>
-<li><span style="color:#5A71A8;"><strong>Promotion</strong></span>: oriented toward gains, growth, and what your mentees could become.
-<ul>
-<li><em>Survey item:</em> “I see myself as someone who helps my mentees reach their full potential as researchers.”</li>
-</ul></li>
-<li><span style="color:#453A98;"><strong>Prevention</strong></span>: oriented toward safety, avoiding mistakes, and what could go wrong.
-<ul>
-<li><em>Survey item:</em> “I often think about how I can prevent problems from derailing my mentees’ research.”</li>
-</ul></li>
-<li><strong>Academic referent</strong>: your team’s research project.
-<ul>
-<li><em>Survey item:</em> “Right now, I am focused on helping my mentees make progress and grow in their research project.”</li>
-</ul></li>
-<li><strong>Social referent</strong>: belonging to the team and connections on campus.
-<ul>
-<li><em>Survey item:</em> “Right now, I am focused on helping my mentees build a sense of belonging and connection on the team.”</li>
-</ul></li>
-</ul>
-<p><strong>Polarity:</strong> Promotion ↔︎ Prevention × Academic ↔︎ Social.</p>
-<p><strong>Measure:</strong> Mentoring Regulatory Focus Scale, 2×2 (adapted; Higgins, 1997; Lockwood, Jordan &amp; Kunda, 2002). Twelve items rated 1–9, three per cell. Focus and referent are scored separately.</p>
-</section>
-<section id="find-your-score" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="find-your-score">Find Your Score</h2>
-<p>Use your password to find your score(s).</p>
-<pre class="{r}"><code>#| label: wk02-motivational-style-compute
-#| include: false
-w2 &lt;- dat |&gt; transmute(Password = PASSWORD,
-  `Promotion × Academic`  = rowMeans(across(W2_1:W2_3)),
-  `Promotion × Social`    = rowMeans(across(W2_4:W2_6)),
-  `Prevention × Academic` = rowMeans(across(W2_7:W2_9)),
-  `Prevention × Social`   = rowMeans(across(W2_10:W2_12)))</code></pre>
-<pre class="{r}"><code>#| label: wk02-motivational-style-table
-#| echo: false
-score_table(w2$Password, list(
-  `Promotion × Academic`=w2$`Promotion × Academic`, `Promotion × Social`=w2$`Promotion × Social`,
-  `Prevention × Academic`=w2$`Prevention × Academic`, `Prevention × Social`=w2$`Prevention × Social`),
-  "2. Motivational Style: your 2×2 cell composites (1–9)",
-  extra = list(
-    `Promotion aim`  = goal_lean(w2$`Promotion × Academic`,  w2$`Promotion × Social`),
-    `Prevention aim` = goal_lean(w2$`Prevention × Academic`, w2$`Prevention × Social`)))</code></pre>
-</section>
-<section id="locate-your-score" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="locate-your-score">Locate Your Score</h2>
-<p>Locate your score(s) relative to other peer mentors!</p>
-<pre class="{r}"><code>#| label: wk02-motivational-style-plot
-#| echo: false
-#| fig-width: 9
-#| fig-height: 5
-norm_facets(list(
-  `Promotion × Academic`=w2$`Promotion × Academic`, `Promotion × Social`=w2$`Promotion × Social`,
-  `Prevention × Academic`=w2$`Prevention × Academic`, `Prevention × Social`=w2$`Prevention × Social`),
-  xlab="Score (1–9)", scale = c(1, 9))</code></pre>
-</section>
-<section id="your-motivational-style" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="your-motivational-style">Your Motivational Style</h2>
-<p>Each dot is one peer mentor. These two plots split your motivation into <strong>how strongly</strong> you hold a focus and <strong>what you aim it at</strong>.</p>
-<p>The <strong>horizontal axis</strong> is how strongly you hold that focus overall. The dashed line is the <strong>class median</strong>, so “high” and “low” mean <em>relative to your classmates</em>, not relative to the 1–9 scale. The <strong>vertical axis</strong> is a difference score: how much more you aim that focus at <strong>academic</strong> goals (your team’s research project) than at <strong>social</strong> goals (belonging and connection). Here the solid line at zero is a real anchor, not a class comparison. Above it you lean academic, below it you lean social, and on it you weight the two equally. Find your <strong>Promotion aim</strong> and <strong>Prevention aim</strong> in the table above.</p>
-<pre class="{r}"><code>#| label: wk02-motivational-style-promotion
-#| echo: false
-#| fig-width: 7
-#| fig-height: 4.6
-focus_plot(w2$`Promotion × Academic`, w2$`Promotion × Social`,
-           "Promotion", construct_color("Promotion", "base"))</code></pre>
-<pre class="{r}"><code>#| label: wk02-motivational-style-prevention
-#| echo: false
-#| fig-width: 7
-#| fig-height: 4.6
-focus_plot(w2$`Prevention × Academic`, w2$`Prevention × Social`,
-           "Prevention", construct_color("Prevention", "base"))</code></pre>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Your style is a snapshot, not a fixed type
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The median split on the horizontal axis means roughly half the class sits on each side <em>by construction</em>. If you sit close to either line, small changes in a few answers would move you. The two plots are also independent: a strong promotion focus does not imply a weak prevention focus, and you can aim them at different goals. Read your position as a description of your current balance, not a fixed type.</p>
-</div>
-</div>
-</section>
-<section id="reflect-and-plan" class="level2">
-<h2 class="anchored" data-anchor-id="reflect-and-plan">Reflect and Plan</h2>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Journal
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><strong>Score:</strong> How does reflecting on your score help you think about who you are as a mentor?</li>
-<li><strong>Behavior:</strong> To be the best mentor you can be, what is one new thing you will try to do this week for mentees and/or your team?</li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>During Class
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Make note of when your energy goes toward helping mentees gain and grow versus avoiding mistakes, and whether you aim it at their research or their sense of belonging.</p>
-</div>
-</div>
 </section>
 </section>
 

@@ -16,8 +16,6 @@ project:
     - wk11-communicator.qmd
     - wk12-people-orientation.qmd
     - wk13-self-awareness.qmd
-    - wk14-paradoxical.qmd
-    - wk15-competency.qmd
     - references.qmd
 
 book:
@@ -43,8 +41,6 @@ book:
     - wk11-communicator.qmd
     - wk12-people-orientation.qmd
     - wk13-self-awareness.qmd
-    - wk14-paradoxical.qmd
-    - wk15-competency.qmd
     - references.qmd
 
 format:

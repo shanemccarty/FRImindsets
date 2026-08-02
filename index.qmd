@@ -50,8 +50,6 @@ week. Each chapter has the distribution for that week's measure and a
 | 11 | Communicator | What is your communication style? |
 | 12 | People Orientation | What is your view of people? |
 | 13 | Self-Awareness | What is your self-awareness type? |
-| 14 | Paradoxical | What is your thinking style? |
-| 15 | Competency | What kind of mentor have you become? |
 
 ### How to find your scores
 

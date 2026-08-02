@@ -29,6 +29,25 @@ quarto preview    # live preview
 GitHub Pages serves the `main` branch `/docs` folder, so publishing is just committing the
 rendered `docs/` and pushing.
 
+### The hidden page
+
+`hidden.qmd` is an internal facilitator view (the weekly table with lecture times), reachable
+only at `/hidden`. It is **not** part of the book — book projects only render listed chapters
+— so `quarto render` does not rebuild it. Rebuild it by hand after editing:
+
+```bash
+quarto render hidden.qmd && mv hidden.html docs/hidden.html && rm -rf hidden_files
+```
+
+It is a self-contained page (`embed-resources: true`), so the single HTML file is all Pages
+needs.
+
+### Parked chapters
+
+`wk14-paradoxical.qmd` and `wk15-competency.qmd` are kept in the repo but removed from
+`_quarto.yml` (both lists) and the Prologue table, so they do not render or appear in the
+guide. Re-add them to `_quarto.yml` to bring them back in a future revision.
+
 ## Structure
 
 | Path | What it is |

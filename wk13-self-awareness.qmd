@@ -8,7 +8,7 @@
 large-scale research program: ten separate investigations with nearly 5,000 participants,
 reported in her book *Insight* (2017) and summarized in the *Harvard Business Review*
 (Eurich, 2018). Her central finding is that self-awareness is not one thing but **two
-independent dimensions** — being clear about yourself says almost nothing about whether you
+independent dimensions**: being clear about yourself says almost nothing about whether you
 know how others see you.
 
 - [**Internal self-awareness**]{style="color:#007F85;"}: how clearly you see your own values,
@@ -43,7 +43,7 @@ The research makes a strong case that self-awareness is both **rare and trainabl
 ## Your Type {.unnumbered}
 
 Crossing the two dimensions gives Eurich's four self-awareness types. The move is not picking
-a side but **raising both** — the goal quadrant is *Aware*.
+a side but **raising both**; the goal quadrant is *Aware*.
 
 | | **Low External** | **High External** |
 |---|---|---|
@@ -54,7 +54,7 @@ a side but **raising both** — the goal quadrant is *Aware*.
 ## Classify yourself
 Read the four types and decide which best describes you **as a mentor right now**. Be honest
 about both dimensions: *Do I see myself clearly?* and *Do I really know how my mentees and
-team see me?* Your type is a snapshot, not a verdict — every type has a concrete way to grow.
+team see me?* Your type is a snapshot, not a verdict; every type has a concrete way to grow.
 :::
 
 ## Reflect and Plan

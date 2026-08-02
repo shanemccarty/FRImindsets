@@ -5,7 +5,7 @@
 source("_setup.R")
 ```
 
-*Does your style focus on structure or support?*
+*Does your mentoring style focus on structure or support?*
 
 ## The Mindset(s) {.unnumbered}
 
@@ -93,5 +93,5 @@ If you sit close to a dashed line, small changes in a few answers would move you
 
 ::: {.callout-tip}
 ## During Class
-Make note of how you provide mentees with both support and structure before, during, and after class 
+- Make note of how you provide mentees with both support and structure before, during, and after class 
 :::

@@ -10,19 +10,20 @@ source("_setup.R")
 ## The Mindset(s) {.unnumbered}
 
 The same regulatory focus from Week 2, now applied to how you lead. Each pole covers the same
-four leadership functions: goal framing, problem solving, error management, and feedback.
+three leadership functions: goal framing, problem solving, and error management. (Feedback is
+its own week: **Week 4, Feedback Orientation**.)
 
 - [**Promotion Leadership**]{style="color:#5A71A8;"}: frames goals around gains, builds on
-  what works, encourages useful risks, and affirms what is going well.
+  what works, and encourages useful risks.
   - *Survey item:* "I motivate my team by framing our goals around the gains and growth we can achieve."
 - [**Prevention Leadership**]{style="color:#453A98;"}: frames goals around setbacks to
-  avoid, fixes what is going wrong, emphasizes accuracy, and corrects errors.
+  avoid, fixes what is going wrong, and emphasizes accuracy.
   - *Survey item:* "I motivate my team by framing our goals around the problems and setbacks we need to avoid."
 
 **Polarity:** Promotion ↔ Prevention (team leadership).
 
 **Measure:** Promotion/Prevention Team Leadership Scale (adapted from regulatory focus
-theory). Eight items rated 1–9, four per subscale.
+theory). Six items rated 1–9, three per subscale.
 
 ## Find Your Score {.unnumbered}
 
@@ -31,9 +32,11 @@ Use your password to find your score(s).
 ```{r}
 #| label: wk03-leadership-focus-compute
 #| include: false
+# feedback items (W3_4 promotion, W3_8 prevention) are dropped: feedback is now
+# its own construct in Week 4 (Feedback Orientation), so it is not scored here.
 w3 <- dat |> transmute(Password = PASSWORD,
-  `Promotion Leadership`  = rowMeans(across(W3_1:W3_4)),
-  `Prevention Leadership` = rowMeans(across(W3_5:W3_8)))
+  `Promotion Leadership`  = rowMeans(across(W3_1:W3_3)),
+  `Prevention Leadership` = rowMeans(across(W3_5:W3_7)))
 ```
 
 ```{r}

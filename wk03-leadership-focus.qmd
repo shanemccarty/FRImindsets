@@ -15,10 +15,10 @@ its own week: **Week 4, Feedback Orientation**.)
 
 - [**Promotion Leadership**]{style="color:#5A71A8;"}: frames goals around gains, builds on
   what works, and encourages useful risks.
-  - *Survey item:* "I motivate my team by framing our goals around the gains and growth we can achieve."
+  - *Survey item:* "I plan to motivate my team by framing our goals around the gains and growth we can achieve."
 - [**Prevention Leadership**]{style="color:#453A98;"}: frames goals around setbacks to
   avoid, fixes what is going wrong, and emphasizes accuracy.
-  - *Survey item:* "I motivate my team by framing our goals around the problems and setbacks we need to avoid."
+  - *Survey item:* "I plan to motivate my team by framing our goals around the problems and setbacks we need to avoid."
 
 **Polarity:** Promotion ↔ Prevention (team leadership).
 

@@ -23,7 +23,7 @@ access status.
 | 10 | Goal Preference | TCoA (Brown, 2006); Outcome and Process Scale (2017); Work Domain Goal Orientation (VandeWalle, 1997) | © |
 | 11 | Facilitator | *(no measure — team facilitation activity)* | — |
 | 12 | Facilitator Reflection | *(no measure — facilitation reflection)* | — |
-| 13 | Self-Awareness | SRIS · Insight (Grant et al., 2002); MCA · Fostering Independence (Fleming et al., 2013); four-type framework from Eurich (2018) | Free / © |
+| 13 | Self-Awareness | Eurich four-type framework — self-classification, no measure (Eurich, 2017, 2018) | Free (framework) |
 | 14 | Paradoxical | Paradox Mindset Scale, 9-item (Miron-Spektor et al., 2018) | © |
 
 **Access legend.** Free = freely available for research and education. © = copyrighted, items

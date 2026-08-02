@@ -5,7 +5,7 @@
 source("_setup.R")
 ```
 
-*Does your mentoring style focus on structure or support?*
+*Does my mentoring style focus on structure or support?*
 
 ## The Mindset(s) {.unnumbered}
 

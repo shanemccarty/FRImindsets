@@ -5,7 +5,7 @@
 source("_setup.R")
 ```
 
-*What is your communication style?*
+*What is my communication style?*
 
 ## The Mindset(s) {.unnumbered}
 

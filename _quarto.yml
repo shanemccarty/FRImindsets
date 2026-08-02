@@ -9,11 +9,11 @@ project:
     - wk04-feedback-orientation.qmd
     - wk05-feedback-purpose.qmd
     - wk06-leadership-role.qmd
-    - wk07-leadership-target.qmd
+    - wk07-communication-style.qmd
     - wk08-inclusive-mentoring.qmd
-    - wk09-conflict-mediator.qmd
+    - wk09-conflict-style.qmd
     - wk10-goal-preference.qmd
-    - wk11-communicator.qmd
+    - wk11-facilitator.qmd
     - wk12-people-orientation.qmd
     - wk13-self-awareness.qmd
     - references.qmd
@@ -34,11 +34,11 @@ book:
     - wk04-feedback-orientation.qmd
     - wk05-feedback-purpose.qmd
     - wk06-leadership-role.qmd
-    - wk07-leadership-target.qmd
+    - wk07-communication-style.qmd
     - wk08-inclusive-mentoring.qmd
-    - wk09-conflict-mediator.qmd
+    - wk09-conflict-style.qmd
     - wk10-goal-preference.qmd
-    - wk11-communicator.qmd
+    - wk11-facilitator.qmd
     - wk12-people-orientation.qmd
     - wk13-self-awareness.qmd
     - references.qmd

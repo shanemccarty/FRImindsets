@@ -4,7 +4,7 @@ editor:
     wrap: 72
 ---
 
-# Prologue {.unnumbered}
+# Introduction {.unnumbered}
 
 Welcome First-year Research Immersion (FRI) Peer Mentors! Thanks for
 serving the next cohort of students as a mentor during the FRI Semester
@@ -43,11 +43,11 @@ week. Each chapter has the distribution for that week's measure and a
 | 4 | Feedback Orientation | Is your feedback preference supportive or corrective? |
 | 5 | Feedback Purpose | Is your feedback preference developmental or summative? |
 | 6 | Leadership Role | Is your team's leadership positional or shared? |
-| 7 | Leadership Target | Is your leadership style task or relational oriented? |
+| 7 | Communication Style | What is your communication style? |
 | 8 | Inclusive Mentoring | Is your mentoring inclusive? |
-| 9 | Conflict Mediator | What is your conflict resolution style? |
+| 9 | Conflict Style | What is your conflict resolution style? |
 | 10 | Goal Preference | What is your goal orientation? |
-| 11 | Communicator | What is your communication style? |
+| 11 | Facilitator | How will you facilitate your team's discussion with caring communication? |
 | 12 | People Orientation | What is your view of people? |
 | 13 | Self-Awareness | What is your self-awareness type? |
 

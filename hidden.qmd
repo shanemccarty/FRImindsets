@@ -24,10 +24,10 @@ URL (`/hidden`).
 | 4 | Feedback Orientation | Is your feedback preference supportive or corrective? | 5 min |
 | 5 | Feedback Purpose | Is your feedback preference developmental or summative? | 10 min |
 | 6 | Leadership Role | Is your team's leadership positional or shared? | 5 min |
-| 7 | Leadership Target | Is your leadership style task or relational oriented? | 20 min |
+| 7 | Communication Style | What is your communication style? | 20 min |
 | 8 | Inclusive Mentoring | Is your mentoring inclusive? | 5 min |
-| 9 | Conflict Mediator | What is your conflict resolution style? | 30 min |
+| 9 | Conflict Style | What is your conflict resolution style? | 30 min |
 | 10 | Goal Preference | What is your goal orientation? | 5 min |
-| 11 | Communicator | What is your communication style? | 40 min |
+| 11 | Facilitator | How will you facilitate your team's discussion with caring communication? | 40 min |
 | 12 | People Orientation | What is your view of people? | 20 min |
 | 13 | Self-Awareness | What is your self-awareness type? | 15 min |

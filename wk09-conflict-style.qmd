@@ -1,4 +1,4 @@
-# 9. Conflict Mediator {.unnumbered}
+# 9. Conflict Style {.unnumbered}
 
 *What is your conflict resolution style?*
 

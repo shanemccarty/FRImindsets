@@ -1,4 +1,4 @@
-# 11. Communicator {.unnumbered}
+# 7. Communication Style {.unnumbered}
 
 ```{r}
 #| include: false
@@ -33,21 +33,22 @@ rated 1 = Never to 4 = Frequently.
 Use your password to find your score(s).
 
 ```{r}
-#| label: wk11-communicator-compute
+#| label: wk07-communication-style-compute
 #| include: false
-w11 <- dat |> transmute(Password = PASSWORD,
+# This measure kept its simulated W11_ item prefix from when it was Week 11.
+comm <- dat |> transmute(Password = PASSWORD,
   `Self-connection`           = rowMeans(cbind(W11_1, W11_4)),
   `Authentic self-expression` = rowMeans(cbind(W11_2, W11_3)),
   `Empathic listening`        = rowMeans(across(W11_5:W11_7)))
 ```
 
 ```{r}
-#| label: wk11-communicator-table
+#| label: wk07-communication-style-table
 #| echo: false
-score_table(w11$Password, list(`Self-connection`=w11$`Self-connection`,
-  `Authentic self-expression`=w11$`Authentic self-expression`,
-  `Empathic listening`=w11$`Empathic listening`),
-  "11. Communicator: your NVCBS composites (1–4)")
+score_table(comm$Password, list(`Self-connection`=comm$`Self-connection`,
+  `Authentic self-expression`=comm$`Authentic self-expression`,
+  `Empathic listening`=comm$`Empathic listening`),
+  "7. Communication Style: your NVCBS composites (1–4)")
 ```
 
 ## Locate Your Score {.unnumbered}
@@ -55,13 +56,13 @@ score_table(w11$Password, list(`Self-connection`=w11$`Self-connection`,
 Locate your score(s) relative to other peer mentors!
 
 ```{r}
-#| label: wk11-communicator-plot
+#| label: wk07-communication-style-plot
 #| echo: false
 #| fig-width: 9
 #| fig-height: 3.8
-norm_facets(list(`Self-connection`=w11$`Self-connection`,
-  `Authentic self-expression`=w11$`Authentic self-expression`,
-  `Empathic listening`=w11$`Empathic listening`), xlab="Frequency",
+norm_facets(list(`Self-connection`=comm$`Self-connection`,
+  `Authentic self-expression`=comm$`Authentic self-expression`,
+  `Empathic listening`=comm$`Empathic listening`), xlab="Frequency",
   scale = c(1, 4), labels = c("1\nNever","2\nRarely","3\nSometimes","4\nFrequently"))
 ```
 

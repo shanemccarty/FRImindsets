@@ -17,11 +17,11 @@ access status.
 | 4 | Feedback Orientation | Feedback Orientation, bipolar (author-created for this course) | Author-created |
 | 5 | Feedback Purpose | Dual-Role FOS (2025); Teachers' Conceptions of Assessment (Brown, 2006) | © |
 | 6 | Leadership Role | SPLIT, full inventory (Grille & Kauffeld, 2015; cf. Hiller et al., 2006) | © |
-| 7 | Leadership Target | SPLIT · task & relation subscales (Grille & Kauffeld, 2015) | © |
+| 7 | Communication Style | Nonviolent Communication Behaviors Scale (Cheung et al., 2022) | © |
 | 8 | Inclusive Mentoring | Culturally Aware Mentorship Self-Efficacy (Byars-Winston & Butz, 2021) | Free *(proposed)* |
-| 9 | Conflict Mediator | Dutch Test for Conflict Handling (DUTCH), short form (De Dreu et al., 2001) | Free (© article) |
+| 9 | Conflict Style | Dutch Test for Conflict Handling (DUTCH), short form (De Dreu et al., 2001) | Free (© article) |
 | 10 | Goal Preference | TCoA (Brown, 2006); Outcome and Process Scale (2017); Work Domain Goal Orientation (VandeWalle, 1997) | © |
-| 11 | Communicator | Nonviolent Communication Behaviors Scale (Cheung et al., 2022) | © |
+| 11 | Facilitator | *(no measure — team facilitation activity)* | — |
 | 12 | People Orientation | 'Kind of Person' Implicit Theory Scale (Dweck, 1999) | Free |
 | 13 | Self-Awareness | SRIS · Insight (Grant et al., 2002); MCA · Fostering Independence (Fleming et al., 2013); four-type framework from Eurich (2018) | Free / © |
 | 14 | Paradoxical | Paradox Mindset Scale, 9-item (Miron-Spektor et al., 2018) | © |

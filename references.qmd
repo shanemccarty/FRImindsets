@@ -16,7 +16,7 @@ access status.
 | 3 | Leadership Focus | Promotion/Prevention Team Leadership Scale (adapted) | Adapted |
 | 4 | Feedback Orientation | Feedback Orientation, bipolar (author-created for this course) | Author-created |
 | 5 | People Orientation | 'Kind of Person' Implicit Theory Scale (Dweck, 1999) | Free |
-| 6 | Leadership Role | SPLIT, full inventory (Grille & Kauffeld, 2015; cf. Hiller et al., 2006) | © |
+| 6 | Leadership Role | Mentoring Leadership Functions inventory (adapted from Morgeson, DeRue & Karam, 2010) | Adapted |
 | 7 | Communication Style | Nonviolent Communication Behaviors Scale (Cheung et al., 2022) | © |
 | 8 | Inclusive Mentoring | Culturally Aware Mentorship Self-Efficacy (Byars-Winston & Butz, 2021) | Free *(proposed)* |
 | 9 | Conflict Style | Dutch Test for Conflict Handling (DUTCH), short form (De Dreu et al., 2001) | Free (© article) |
@@ -83,6 +83,10 @@ models. *Journal of Personality and Social Psychology, 83*(4), 854–864.
 
 Miron-Spektor, E., et al. (2018). Microfoundations of organizational paradox. *Academy of
 Management Journal, 61*(1), 26–45.
+
+Morgeson, F. P., DeRue, D. S., & Karam, E. P. (2010). Leadership in teams: A functional
+approach to understanding leadership structures and processes. *Journal of Management,
+36*(1), 5–39.
 
 Rahim, M. A. (1983). *Rahim Organizational Conflict Inventory-II.* (Commercially licensed.)
 

@@ -1,35 +1,94 @@
 # 6. Leadership Role {.unnumbered}
 
+```{r}
+#| include: false
+source("_setup.R")
+```
+
 *What is my leadership role?*
 
 ## The Mindset(s) {.unnumbered}
 
-- **Positional / formal leadership**: leadership that comes from an assigned role and sits
-  with one person.
-  - *Survey item:* items pending.
-- **Shared / informal leadership**: leadership that is distributed across the team and
-  emerges from the work.
-  - *Survey item:* items pending.
+Leading a team is not one job but many. Morgeson, DeRue & Karam (2010) describe team
+leadership as a set of distinct **functions** a leader can take on. This week you decide which
+of ten functions you see as **your role** as a peer mentor. They fall into two groups:
 
-**Polarity:** Positional/Formal ↔ Shared/Informal.
+- **Task leadership**: getting the work done: planning, tracking, training, and assessing.
+  - *Survey item:* "As a peer mentor, it is my role to help them plan."
+- **Relational leadership**: supporting the people: motivating, developing, and holding the
+  team together.
+  - *Survey item:* "As a peer mentor, it is my role to motivate the team to excel."
 
-**Measure:** SPLIT, full inventory (Grille & Kauffeld, 2015; cf. Hiller et al., 2006).
+**Polarity:** Task ↔ Relational leadership.
 
-::: {.callout-note}
-## Measure pending
-The full SPLIT adds change-oriented and micropolitical subscales beyond the task and
-relation subscales you complete in Week 7. Those items have not yet been sourced.
+**Measure:** Mentoring Leadership Functions inventory, adapted from Morgeson et al. (2010),
+Table 2. The stem is *"As a peer mentor, it is my role to…"* and you rate each of ten
+functions 1–10. You have a **budget of 50 points** to spread across the ten, so you have to
+prioritize which functions are most central to your role.
+
+- **Task functions:** help them plan · keep track of assignment due dates · train the team on
+  specific research skills · provide feedback to teammates · evaluate the performance of the team
+- **Relational functions:** monitor the group chat for help · motivate the team to excel ·
+  encourage team members to self-manage · resolve team conflict · build friendships
+
+## Find Your Score {.unnumbered}
+
+Use your password to find your score(s).
+
+```{r}
+#| label: wk06-leadership-role-compute
+#| include: false
+w6 <- dat |> transmute(Password = PASSWORD,
+  Task       = rowMeans(across(c(W6_1, W6_2, W6_4, W6_5, W6_6))),
+  Relational = rowMeans(across(c(W6_3, W6_7, W6_8, W6_9, W6_10))))
+lean6 <- factor(dplyr::case_when(
+  w6$Task - w6$Relational >  0.5 ~ "Task-leaning",
+  w6$Task - w6$Relational < -0.5 ~ "Relational-leaning",
+  TRUE                           ~ "Balanced"),
+  levels = c("Task-leaning", "Balanced", "Relational-leaning"))
+```
+
+```{r}
+#| label: wk06-leadership-role-table
+#| echo: false
+score_table(w6$Password, list(Task=w6$Task, Relational=w6$Relational),
+  "6. Leadership Role: your points-per-function averages (1–10)",
+  extra = list(Lean = lean6))
+```
+
+## Locate Your Score {.unnumbered}
+
+Locate your score(s) relative to other peer mentors!
+
+```{r}
+#| label: wk06-leadership-role-plot
+#| echo: false
+#| fig-width: 9
+#| fig-height: 3.8
+norm_facets(list(Task=w6$Task, Relational=w6$Relational),
+  xlab="Average points per function (1–10)", scale = c(1, 10))
+```
+
+::: {.callout-important}
+## About this measure
+The ten functions are drawn from Morgeson, DeRue & Karam's (2010) functional model of team
+leadership, but the mentoring-specific wording, the importance framing, and the 50-point
+budget are **adapted for this course**. Because the points are a fixed budget, spending more
+on one group of functions necessarily means spending less on the other. Re-check reliability
+before reporting results beyond this guide.
 :::
 
 ## Reflect and Plan
 
 ::: {.callout-warning}
 ## Journal
-- **Score:** How does reflecting on your score help you think about who you are as a mentor?
+- **Score:** Which functions did you rate highest, and does that match the role your team
+  actually needs from you?
 - **Behavior:** To be the best mentor you can be, what is one new thing you will try to do this week for mentees and/or your team?
 :::
 
 ::: {.callout-tip}
 ## During Class
-Make note of whether leadership on your team sits with one person or is shared across the group.
+Make note of which leadership functions you actually spend your time on this week, and whether
+they match the ones you said were your role.
 :::

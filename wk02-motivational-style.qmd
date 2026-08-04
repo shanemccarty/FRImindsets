@@ -14,20 +14,21 @@ the **goal** is what you are hoping to attain.
 
 - [**Promotion**]{style="color:#5A71A8;"}: oriented toward gains, growth, and what your
   mentees could become.
-  - *Survey item:* "I see myself as someone who helps my mentees reach their full potential as researchers."
+  - *Survey item:* "Helping my mentees reach their full potential as researchers."
 - [**Prevention**]{style="color:#453A98;"}: oriented toward safety, avoiding mistakes, and
   what could go wrong.
-  - *Survey item:* "I often think about how I can prevent problems from derailing my mentees' research."
+  - *Survey item:* "Preventing problems from derailing my mentees' research."
 - **Academic referent**: your team's research project.
-  - *Survey item:* "Right now, I am focused on helping my mentees make progress and grow in their research project."
+  - *Survey item:* "Helping my mentees make progress and grow in their research project."
 - **Social referent**: belonging to the team and connections on campus.
-  - *Survey item:* "Right now, I am focused on helping my mentees build a sense of belonging and connection on the team."
+  - *Survey item:* "Helping my mentees build a sense of belonging and connection on the team."
 
 **Polarity:** Promotion ↔ Prevention × Academic ↔ Social.
 
 **Measure:** Mentoring Regulatory Focus Scale, 2×2 (adapted; Higgins, 1997; Lockwood,
-Jordan & Kunda, 2002). Twelve items rated 1–9, three per cell. Focus and referent are
-scored separately.
+Jordan & Kunda, 2002). The stem is *"As a peer mentor, how much will you emphasize each?"* and
+you rate twelve items, three per cell, on a 1–7 emphasis scale (1 = No emphasis, 4 = Moderate,
+7 = Very strong emphasis). Focus and referent are scored separately.
 
 ## Find Your Score {.unnumbered}
 
@@ -49,7 +50,7 @@ w2 <- dat |> transmute(Password = PASSWORD,
 score_table(w2$Password, list(
   `Promotion × Academic`=w2$`Promotion × Academic`, `Promotion × Social`=w2$`Promotion × Social`,
   `Prevention × Academic`=w2$`Prevention × Academic`, `Prevention × Social`=w2$`Prevention × Social`),
-  "2. Motivational Style: your 2×2 cell composites (1–9)",
+  "2. Motivational Style: your 2×2 cell composites (1–7)",
   extra = list(
     `Promotion aim`  = goal_lean(w2$`Promotion × Academic`,  w2$`Promotion × Social`),
     `Prevention aim` = goal_lean(w2$`Prevention × Academic`, w2$`Prevention × Social`)))
@@ -67,7 +68,7 @@ Locate your score(s) relative to other peer mentors!
 norm_facets(list(
   `Promotion × Academic`=w2$`Promotion × Academic`, `Promotion × Social`=w2$`Promotion × Social`,
   `Prevention × Academic`=w2$`Prevention × Academic`, `Prevention × Social`=w2$`Prevention × Social`),
-  xlab="Score (1–9)", scale = c(1, 9))
+  xlab="Emphasis (1–7)", scale = c(1, 7))
 ```
 
 ## Your Motivational Style {.unnumbered}
@@ -77,7 +78,7 @@ hold a focus and **what you aim it at**.
 
 The **horizontal axis** is how strongly you hold that focus overall. The dashed line is the
 **class median**, so "high" and "low" mean *relative to your classmates*, not relative to the
-1–9 scale. The **vertical axis** is a difference score: how much more you aim that focus at
+1–7 scale. The **vertical axis** is a difference score: how much more you aim that focus at
 **academic** goals (your team's research project) than at **social** goals (belonging and
 connection). Here the solid line at zero is a real anchor, not a class comparison. Above it
 you lean academic, below it you lean social, and on it you weight the two equally. Find your
@@ -89,7 +90,7 @@ you lean academic, below it you lean social, and on it you weight the two equall
 #| fig-width: 7
 #| fig-height: 4.6
 focus_plot(w2$`Promotion × Academic`, w2$`Promotion × Social`,
-           "Promotion", construct_color("Promotion", "base"))
+           "Promotion", construct_color("Promotion", "base"), scale = c(1, 7))
 ```
 
 ```{r}
@@ -98,7 +99,7 @@ focus_plot(w2$`Promotion × Academic`, w2$`Promotion × Social`,
 #| fig-width: 7
 #| fig-height: 4.6
 focus_plot(w2$`Prevention × Academic`, w2$`Prevention × Social`,
-           "Prevention", construct_color("Prevention", "base"))
+           "Prevention", construct_color("Prevention", "base"), scale = c(1, 7))
 ```
 
 ::: {.callout-note}

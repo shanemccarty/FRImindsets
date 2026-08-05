@@ -60,7 +60,7 @@ anywhere beyond this guide.
 
 ::: {.callout-warning}
 ## Journal
-- **Score:** Which style is your highest, and which situations does it serve well or poorly?
+- **Score:** How does reflecting on your score help you think about who you are as a mentor?
 - **Behavior:** To be the best mentor you can be, what is one new thing you will try to do this week for mentees and/or your team?
 :::
 

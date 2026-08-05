@@ -78,7 +78,7 @@ retrospective). Re-check reliability before reporting results beyond this guide.
 
 ::: {.callout-warning}
 ## Journal
-- **Score:** Where is the gap between what you value (Attitudes) and what you do (Behaviors), and what would close it?
+- **Score:** How does reflecting on your score help you think about who you are as a mentor?
 - **Behavior:** To be the best mentor you can be, what is one new thing you will try to do this week for mentees and/or your team?
 :::
 

@@ -21,11 +21,11 @@ Qualtrics survey responses, and a **journal entry** that turns the
 reflection into a weekly goal.
 
 ::: callout-important
-## Simulated data
+## About the data
 
-Every score, table, and figure in this draft is **simulated** for layout
-and review. Real results will replace them once the pre/post Qualtrics
-survey is collected.
+Every score, table, and figure now uses **real pretest data** from the 65
+peer mentors who completed the Qualtrics survey. Post-semester results will
+be added once that survey is collected.
 :::
 
 ## A Guide for You
@@ -67,9 +67,10 @@ in your phone notes. To change it, contact the course instructor.
 
 ### How to interpret your scores
 
-Each measure produces a **composite score**, the average of your
-responses to a set of related items (after adjusting any reverse-coded
-items so all point the same way).
+Each measure produces a **composite score** from your responses to a set
+of related items (usually their average; for the two point-budget measures,
+their total), after adjusting any reverse-coded items so all point the same
+way.
 
 1.  **Find your score** in the password lookup table.
 2.  **Locate it** on the class distribution. The dashed lines mark the
@@ -88,9 +89,9 @@ is self-awareness.
 ::: callout-important
 ## About the data
 
-Every score, table, and figure in this draft is **simulated** for layout
-and review. Real results will replace them once the pre/post Qualtrics
-survey is collected.
+Every score, table, and figure now uses **real pretest data** from the 65
+peer mentors who completed the Qualtrics survey. Post-semester results will
+be added once that survey is collected.
 :::
 
 The first numbered chapter, **1. Mentoring Style**, begins the weekly

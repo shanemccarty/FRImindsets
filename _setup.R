@@ -1,5 +1,6 @@
 # Shared setup for the FRI Peer Mentor Mindsets Guide.
-# NOTE: all scores here come from a SIMULATED dataset (data/sim_survey_data.csv).
+# Scores come from data/survey_pre.csv: 65 real pretest respondents, de-identified
+# (PASSWORD + item responses), built by scoring-key.R from the Qualtrics exports.
 # Install once:  install.packages(c("dplyr","tibble","purrr","ggplot2","kableExtra"))
 suppressPackageStartupMessages({
   library(dplyr)
@@ -13,7 +14,7 @@ source("colors.R")
 green <- brand_green; accent <- brand_accent
 band_fill <- c(Low = "#EAF3EE", Mid = "#B9D8CA", High = "#005A43")
 
-dat <- read.csv("data/sim_survey_data.csv", check.names = FALSE)
+dat <- read.csv("data/survey_pre.csv", check.names = FALSE)
 
 # Percentile + low/mid/high label, e.g. "72% (high)"
 add_percentile <- function(x) {
@@ -125,7 +126,8 @@ typology_plot <- function(support, structure,
     geom_vline(xintercept = ms, linetype = "dashed", color = "#333333", linewidth = .5) +
     geom_hline(yintercept = mt, linetype = "dashed", color = "#333333", linewidth = .5) +
     geom_point(data = pts, aes(support, structure), color = green,
-               size = 2.6, alpha = 0.8) +
+               size = 2.6, alpha = 0.8,
+               position = position_jitter(width = 0.07, height = 0.07, seed = 1)) +
     geom_text(data = quad, aes(lx, ly, label = label, hjust = hj, vjust = vj),
               color = "#33553F", fontface = "bold", size = 3.5,
               nudge_x = c(-.12, .12, -.12, .12), nudge_y = c(-.12, -.12, .12, .12)) +
@@ -160,7 +162,8 @@ focus_plot <- function(academic, social, focus, point_col, scale = c(1, 9)) {
                                  ymin = ymin, ymax = ymax, fill = goal)) +
     geom_hline(yintercept = 0, color = "#333333", linewidth = .6) +
     geom_vline(xintercept = m, linetype = "dashed", color = "#333333", linewidth = .5) +
-    geom_point(data = pts, aes(strength, lean), color = point_col, size = 2.6, alpha = .85) +
+    geom_point(data = pts, aes(strength, lean), color = point_col, size = 2.6, alpha = .85,
+               position = position_jitter(width = 0.07, height = 0.07, seed = 1)) +
     annotate("text", x = scale[1] + .15, y = yl - .15, label = "Academic goals",
              hjust = 0, vjust = 1, fontface = "bold", size = 3.4, color = "#4A5A52") +
     annotate("text", x = scale[1] + .15, y = -yl + .15, label = "Social goals",
@@ -169,7 +172,7 @@ focus_plot <- function(academic, social, focus, point_col, scale = c(1, 9)) {
     scale_x_continuous(breaks = seq(scale[1], scale[2], 1)) +
     scale_y_continuous(breaks = seq(-floor(yl), floor(yl), 1)) +
     coord_cartesian(xlim = scale, ylim = c(-yl, yl), expand = FALSE) +
-    labs(x = paste0(focus, " strength (1-9)"),
+    labs(x = paste0(focus, " strength (", scale[1], "-", scale[2], ")"),
          y = "Goal lean (academic minus social)") +
     theme_minimal(base_size = 12) +
     theme(panel.grid.minor = element_blank(),

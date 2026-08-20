@@ -38,10 +38,10 @@ Use your password to find your score(s).
 #| label: wk02-motivational-style-compute
 #| include: false
 w2 <- dat |> transmute(Password = PASSWORD,
-  `Promotion × Academic`  = rowMeans(across(W2_1:W2_3)),
-  `Promotion × Social`    = rowMeans(across(W2_4:W2_6)),
-  `Prevention × Academic` = rowMeans(across(W2_7:W2_9)),
-  `Prevention × Social`   = rowMeans(across(W2_10:W2_12)))
+  `Promotion × Academic`  = rowMeans(across(c(Pro_Acad1, Pro_Acad2, Pro_Acad3))),
+  `Promotion × Social`    = rowMeans(across(c(Pro_Social1, Pro_Social2, Pro_Social3))),
+  `Prevention × Academic` = rowMeans(across(c(Prev_Acad1, Prev_Acad2, Prev_Acad3))),
+  `Prevention × Social`   = rowMeans(across(c(Prev_Social1, Prev_Social2, Prev_Social3))))
 ```
 
 ```{r}

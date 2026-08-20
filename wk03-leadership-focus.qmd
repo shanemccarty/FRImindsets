@@ -23,7 +23,7 @@ its own week: **Week 4, Feedback Orientation**.)
 **Polarity:** Promotion ↔ Prevention (team leadership).
 
 **Measure:** Promotion/Prevention Team Leadership Scale (adapted from regulatory focus
-theory). Six items rated 1–9, three per subscale.
+theory). Six items rated 1–7, three per subscale.
 
 ## Find Your Score {.unnumbered}
 
@@ -32,11 +32,9 @@ Use your password to find your score(s).
 ```{r}
 #| label: wk03-leadership-focus-compute
 #| include: false
-# feedback items (W3_4 promotion, W3_8 prevention) are dropped: feedback is now
-# its own construct in Week 4 (Feedback Orientation), so it is not scored here.
 w3 <- dat |> transmute(Password = PASSWORD,
-  `Promotion Leadership`  = rowMeans(across(W3_1:W3_3)),
-  `Prevention Leadership` = rowMeans(across(W3_5:W3_7)))
+  `Promotion Leadership`  = rowMeans(across(c(Lead_Promo1, Lead_Promo2, Lead_Promo3))),
+  `Prevention Leadership` = rowMeans(across(c(Lead_Prev1, Lead_Prev2, Lead_Prev3))))
 ```
 
 ```{r}
@@ -44,7 +42,7 @@ w3 <- dat |> transmute(Password = PASSWORD,
 #| echo: false
 score_table(w3$Password, list(`Promotion Leadership`=w3$`Promotion Leadership`,
   `Prevention Leadership`=w3$`Prevention Leadership`),
-  "3. Leadership Focus: your composite scores (1–9)")
+  "3. Leadership Focus: your composite scores (1–7)")
 ```
 
 ## Locate Your Score {.unnumbered}
@@ -57,8 +55,8 @@ Locate your score(s) relative to other peer mentors!
 #| fig-width: 9
 #| fig-height: 3.8
 norm_facets(list(`Promotion Leadership`=w3$`Promotion Leadership`,
-  `Prevention Leadership`=w3$`Prevention Leadership`), xlab="Score (1–9)",
-  scale = c(1, 9))
+  `Prevention Leadership`=w3$`Prevention Leadership`), xlab="Score (1–7)",
+  scale = c(1, 7))
 ```
 
 ## Reflect and Plan

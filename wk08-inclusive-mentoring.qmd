@@ -32,7 +32,7 @@ adapted (Byars-Winston & Butz, 2021). Six items: three **Attitudes** (A2, A4, A5
   right now?"* rated 1 = Strongly disagree to 6 = Strongly agree.
 
 Comparing the two shows the gap between what you value and what you currently do. The scores
-below are simulated for the **Current** version.
+below are from the pretest (**Importance**) version.
 
 ## Find Your Score {.unnumbered}
 
@@ -42,15 +42,15 @@ Use your password to find your score(s).
 #| label: wk08-inclusive-mentoring-compute
 #| include: false
 w8 <- dat |> transmute(Password = PASSWORD,
-  Attitudes = rowMeans(across(W8_1:W8_3)),
-  Behaviors = rowMeans(across(W8_4:W8_6)))
+  Attitudes = rowMeans(across(c(Attitudes1, Attitudes2, Attitudes3))),
+  Behaviors = rowMeans(across(c(Behaviors1, Behaviors2, Behaviors3))))
 ```
 
 ```{r}
 #| label: wk08-inclusive-mentoring-table
 #| echo: false
 score_table(w8$Password, list(Attitudes=w8$Attitudes, Behaviors=w8$Behaviors),
-  "8. Inclusive Mentoring: your CDA-R/E composites (1–6, Current version)")
+  "8. Inclusive Mentoring: your CDA-R/E composites (1–6, Importance version)")
 ```
 
 ## Locate Your Score {.unnumbered}
@@ -63,7 +63,7 @@ Locate your score(s) relative to other peer mentors!
 #| fig-width: 9
 #| fig-height: 3.8
 norm_facets(list(Attitudes=w8$Attitudes, Behaviors=w8$Behaviors),
-  xlab="Agreement (1–6)", scale = c(1, 6))
+  xlab="Importance (1–6)", scale = c(1, 6))
 ```
 
 ::: {.callout-important}

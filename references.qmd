@@ -94,6 +94,6 @@ VandeWalle, D. (1997). Development and validation of a Work Domain Goal Orientat
 Instrument. *Educational and Psychological Measurement, 57*(6), 995–1015.
 
 ::: {.callout-important}
-Data in this guide are **simulated**. Replace `data/sim_survey_data.csv` with the class's
-Qualtrics export before sharing.
+Scores in this guide use **real pretest data** (`data/survey_pre.csv`, 65 respondents), built
+by `scoring-key.R` from the Qualtrics exports. Post-semester results are still to come.
 :::

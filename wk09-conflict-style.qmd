@@ -1,5 +1,10 @@
 # 9. Conflict Style {.unnumbered}
 
+```{r}
+#| include: false
+source("_setup.R")
+```
+
 *What is my conflict resolution style?*
 
 ## The Mindset(s) {.unnumbered}
@@ -32,6 +37,43 @@ styles. **No style is wrong.** Each one works well in some situations and costs 
 Nauta, 2001), short form. Fifteen items, three per style, rated 1 = Not at all to
 5 = Very much. Each style is scored as the mean of its three items, so you get a **profile
 across all five** rather than a single label.
+
+## Find Your Score {.unnumbered}
+
+Use your password to find your score(s).
+
+```{r}
+#| label: wk09-conflict-style-compute
+#| include: false
+w9 <- dat |> transmute(Password = PASSWORD,
+  Competing     = rowMeans(across(c(Competing1, Competing2, Competing3))),
+  Collaborating = rowMeans(across(c(Collaborating1, Collaborating2, Collaborating3))),
+  Compromising  = rowMeans(across(c(Compromising1, Compromising2, Compromising3))),
+  Avoiding      = rowMeans(across(c(Avoiding1, Avoiding2, Avoiding3))),
+  Accommodating = rowMeans(across(c(Accommodate1, Accommodate2, Accommodate3))))
+```
+
+```{r}
+#| label: wk09-conflict-style-table
+#| echo: false
+score_table(w9$Password, list(Competing=w9$Competing, Collaborating=w9$Collaborating,
+  Compromising=w9$Compromising, Avoiding=w9$Avoiding, Accommodating=w9$Accommodating),
+  "9. Conflict Style: your five DUTCH style scores (1–5)")
+```
+
+## Locate Your Score {.unnumbered}
+
+Locate your score(s) relative to other peer mentors!
+
+```{r}
+#| label: wk09-conflict-style-plot
+#| echo: false
+#| fig-width: 9
+#| fig-height: 6
+norm_facets(list(Competing=w9$Competing, Collaborating=w9$Collaborating,
+  Compromising=w9$Compromising, Avoiding=w9$Avoiding, Accommodating=w9$Accommodating),
+  xlab="Frequency (1–5)", scale = c(1, 5))
+```
 
 ## Your Type {.unnumbered}
 

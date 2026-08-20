@@ -22,3 +22,6 @@ _archive/
 
 /.quarto/
 **/*.quarto_ipynb
+
+# Raw survey data: keep local, never publish
+data/*.csv

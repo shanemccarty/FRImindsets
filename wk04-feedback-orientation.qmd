@@ -23,9 +23,9 @@ and the useful skill is knowing which one a moment calls for.
 **Polarity:** Corrective ↔ Supportive.
 
 **Measure:** Feedback Orientation, bipolar (author-created for this course). Three
-semantic-differential items rated 1–7, where **1 = fully corrective** and **7 = fully
-supportive**. Your score is the mean of the three items, so **4 is balanced**, below 4 leans
-corrective, and above 4 leans supportive.
+semantic-differential items rated from −3 to +3, where **−3 = fully corrective** and **+3 =
+fully supportive**. Your score is the mean of the three items, so **0 is balanced**, below 0
+leans corrective, and above 0 leans supportive.
 
 ## Find Your Score {.unnumbered}
 
@@ -35,13 +35,13 @@ Use your password to find your score(s).
 #| label: wk04-feedback-orientation-compute
 #| include: false
 w4 <- dat |> transmute(Password = PASSWORD,
-  `Feedback orientation` = rowMeans(across(W4_1:W4_3)))
+  `Feedback orientation` = rowMeans(across(c(Feedback1, Feedback2, Feedback3))))
 # cutoffs sit between the discrete 1/3-steps a 3-item mean can take, so the
 # label always matches the rounded score shown in the table.
 lean4 <- factor(dplyr::case_when(
-  w4$`Feedback orientation` > 4.5 ~ "Supportive-leaning",
-  w4$`Feedback orientation` < 3.5 ~ "Corrective-leaning",
-  TRUE                            ~ "Balanced"),
+  w4$`Feedback orientation` >  0.5 ~ "Supportive-leaning",
+  w4$`Feedback orientation` < -0.5 ~ "Corrective-leaning",
+  TRUE                             ~ "Balanced"),
   levels = c("Corrective-leaning", "Balanced", "Supportive-leaning"))
 ```
 
@@ -49,7 +49,7 @@ lean4 <- factor(dplyr::case_when(
 #| label: wk04-feedback-orientation-table
 #| echo: false
 score_table(w4$Password, list(`Feedback orientation`=w4$`Feedback orientation`),
-  "4. Feedback Orientation: your bipolar score (1 = corrective … 7 = supportive)",
+  "4. Feedback Orientation: your bipolar score (−3 = corrective … +3 = supportive)",
   extra = list(Lean = lean4))
 ```
 
@@ -63,8 +63,8 @@ Locate your score(s) relative to other peer mentors!
 #| fig-width: 8
 #| fig-height: 4
 norm_facets(list(`Feedback orientation`=w4$`Feedback orientation`),
-  xlab="Feedback orientation", scale = c(1, 7),
-  labels = c("1\nCorrective","2","3","4\nBalanced","5","6","7\nSupportive"))
+  xlab="Feedback orientation", scale = c(-3, 3),
+  labels = c("−3\nCorrective","−2","−1","0\nBalanced","1","2","3\nSupportive"))
 ```
 
 ::: {.callout-important}

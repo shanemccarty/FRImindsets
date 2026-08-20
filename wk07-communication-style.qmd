@@ -35,11 +35,10 @@ Use your password to find your score(s).
 ```{r}
 #| label: wk07-communication-style-compute
 #| include: false
-# This measure kept its simulated W11_ item prefix from when it was Week 11.
 comm <- dat |> transmute(Password = PASSWORD,
-  `Self-connection`           = rowMeans(cbind(W11_1, W11_4)),
-  `Authentic self-expression` = rowMeans(cbind(W11_2, W11_3)),
-  `Empathic listening`        = rowMeans(across(W11_5:W11_7)))
+  `Self-connection`           = rowMeans(across(c(Selfconnect1, Selfconnect2))),
+  `Authentic self-expression` = rowMeans(across(c(Selfexpress1, Selfexpress2))),
+  `Empathic listening`        = rowMeans(across(c(Listen1, Listen2, Listen3))))
 ```
 
 ```{r}

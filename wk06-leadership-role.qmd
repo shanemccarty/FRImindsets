@@ -13,10 +13,10 @@ Leading a team is not one job but many. Morgeson, DeRue & Karam (2010) describe 
 leadership as a set of distinct **functions** a leader can take on. This week you decide which
 of ten functions you see as **your role** as a peer mentor. They fall into two groups:
 
-- **Task leadership**: getting the work done: planning, tracking, training, and assessing.
+- **Task leadership**: getting the work done: planning, tracking, and training.
   - *Survey item:* "As a peer mentor, it is my role to help them plan."
-- **Relational leadership**: supporting the people: motivating, developing, and holding the
-  team together.
+- **Relational leadership**: supporting the people: monitoring, motivating, developing, and
+  holding the team together.
   - *Survey item:* "As a peer mentor, it is my role to motivate the team to excel."
 
 **Polarity:** Task ↔ Relational leadership.
@@ -24,12 +24,14 @@ of ten functions you see as **your role** as a peer mentor. They fall into two g
 **Measure:** Mentoring Leadership Functions inventory, adapted from Morgeson et al. (2010),
 Table 2. The stem is *"As a peer mentor, it is my role to…"* and you rate each of ten
 functions 1–10. You have a **budget of 50 points** to spread across the ten, so you have to
-prioritize which functions are most central to your role.
+prioritize which functions are most central to your role. Your **Task** and **Relational**
+scores are the total points you place on each group's functions (out of 50).
 
 - **Task functions:** help them plan · keep track of assignment due dates · train the team on
-  specific research skills · provide feedback to teammates · evaluate the performance of the team
-- **Relational functions:** monitor the group chat for help · motivate the team to excel ·
-  encourage team members to self-manage · resolve team conflict · build friendships
+  specific research skills · provide feedback to teammates
+- **Relational functions:** monitor the group chat for help · evaluate the performance of the
+  team · motivate the team to excel · encourage team members to self-manage · resolve team
+  conflict · build friendships
 
 ## Find Your Score {.unnumbered}
 
@@ -39,21 +41,15 @@ Use your password to find your score(s).
 #| label: wk06-leadership-role-compute
 #| include: false
 w6 <- dat |> transmute(Password = PASSWORD,
-  Task       = rowMeans(across(c(W6_1, W6_2, W6_4, W6_5, W6_6))),
-  Relational = rowMeans(across(c(W6_3, W6_7, W6_8, W6_9, W6_10))))
-lean6 <- factor(dplyr::case_when(
-  w6$Task - w6$Relational >  0.5 ~ "Task-leaning",
-  w6$Task - w6$Relational < -0.5 ~ "Relational-leaning",
-  TRUE                           ~ "Balanced"),
-  levels = c("Task-leaning", "Balanced", "Relational-leaning"))
+  Task       = Q11_1 + Q11_4 + Q11_6 + Q11_7,
+  Relational = Q11_5 + Q11_8 + Q11_9 + Q11_10 + Q11_11 + Q11_12)
 ```
 
 ```{r}
 #| label: wk06-leadership-role-table
 #| echo: false
 score_table(w6$Password, list(Task=w6$Task, Relational=w6$Relational),
-  "6. Leadership Role: your points-per-function averages (1–10)",
-  extra = list(Lean = lean6))
+  "6. Leadership Role: your point totals (out of 50)")
 ```
 
 ## Locate Your Score {.unnumbered}
@@ -66,7 +62,7 @@ Locate your score(s) relative to other peer mentors!
 #| fig-width: 9
 #| fig-height: 3.8
 norm_facets(list(Task=w6$Task, Relational=w6$Relational),
-  xlab="Average points per function (1–10)", scale = c(1, 10))
+  xlab="Points (out of 50)", scale = c(0, 50), by = 10)
 ```
 
 ::: {.callout-important}
@@ -74,8 +70,10 @@ norm_facets(list(Task=w6$Task, Relational=w6$Relational),
 The ten functions are drawn from Morgeson, DeRue & Karam's (2010) functional model of team
 leadership, but the mentoring-specific wording, the importance framing, and the 50-point
 budget are **adapted for this course**. Because the points are a fixed budget, spending more
-on one group of functions necessarily means spending less on the other. Re-check reliability
-before reporting results beyond this guide.
+on one group of functions necessarily means spending less on the other. Task and Relational
+also cover different numbers of functions (four vs six), so compare each score to the class
+distribution above rather than directly to each other. Re-check reliability before reporting
+results beyond this guide.
 :::
 
 ## Reflect and Plan

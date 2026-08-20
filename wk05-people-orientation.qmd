@@ -30,16 +30,16 @@ Use your password to find your score(s).
 ```{r}
 #| label: wk05-people-orientation-compute
 #| include: false
-# Growth mindset moved to Week 5; items keep the W12_ prefix from when it was Week 12.
-w12 <- dat |> transmute(Password = PASSWORD,
-  `Growth mindset` = rowMeans(cbind(7-W12_1, 7-W12_2, W12_3, 7-W12_4,
-                                    W12_5, 7-W12_6, W12_7, W12_8)))
+# Growth mindset: the four _R items are reverse-scored (7 - x on the 1-6 scale).
+w5 <- dat |> transmute(Password = PASSWORD,
+  `Growth mindset` = rowMeans(cbind(7-GrowthMind1_R, 7-GrowthMind2_R, GrowthMind3, 7-GrowthMind4_R,
+                                    GrowthMind5, 7-GrowthMind6_R, GrowthMind7, GrowthMind8)))
 ```
 
 ```{r}
 #| label: wk05-people-orientation-table
 #| echo: false
-score_table(w12$Password, list(`Growth mindset`=w12$`Growth mindset`),
+score_table(w5$Password, list(`Growth mindset`=w5$`Growth mindset`),
   "5. People Orientation: your growth mindset composite (1–6)")
 ```
 
@@ -52,7 +52,7 @@ Locate your score(s) relative to other peer mentors!
 #| echo: false
 #| fig-width: 6
 #| fig-height: 3.8
-norm_facets(list(`Growth mindset`=w12$`Growth mindset`), xlab="Growth mindset (1–6)",
+norm_facets(list(`Growth mindset`=w5$`Growth mindset`), xlab="Growth mindset (1–6)",
   scale = c(1, 6))
 ```
 

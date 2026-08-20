@@ -18,19 +18,24 @@ Authoritative mentoring blends two things at once:
 
 **Polarity:** Structure ↔ Support.
 
-**Measure:** Mentoring Style Values Inventory (importance-rated; adapted from Ertesvåg, 2011).
-Eight items, four per subscale, rated 1–10 for importance under a 40-point budget that forces you to prioritize.
+This chapter looks at structure and support through **two lenses**. Your **dimensional
+preference** comes from a 40-point budget, where valuing one more means valuing the other less,
+so it captures which way you *lean*. Your **type** comes from your rated **skill** on
+structure- and support-related mentoring competencies, which are measured independently, so you
+can be high or low on each.
 
-## Your Type {.unnumbered}
+**Measures:**
 
-Structure and support are two dimensions that result in four mentoring styles. Neither dimension is "good" or "bad" on its own; it is the *combination* that describes how you show up as a mentor:
+- **Mentoring Style Values Inventory** (importance-rated; adapted from Ertesvåg, 2011). Eight
+  items, four per subscale, rated 1–10 under a 40-point budget.
+- **Mentoring Competency Assessment** (Fleming et al., 2013), skill-rated 1–7. Selected items
+  form an independent support-skill and structure-skill composite (see *Your Type*).
 
-| | **Low Support** | [**High Support**]{style="color:#007F85;"} |
-|---|---|---|
-| [**High Structure**]{style="color:#C0522A;"}| **Authoritarian:** high expectations, little warmth. Clear and demanding, but mentees may not feel safe asking for help. | [**Authoritative:**]{style="color:#005A43;"} high expectations *and* high warmth. Clear structure that mentees experience as being on their side. |
-| **Low Structure** | **Uninvolved:** low on both. Mentees are largely left to themselves. | **Permissive:** warm and caring, but loose on expectations. Mentees feel supported but may drift. |
+## Your Dimensional Preference {.unnumbered}
 
-## Find Your Score {.unnumbered}
+Because the eight budget items share **40 points**, Support and Structure trade off against each
+other: every point you add to one you take from the other, and the two always total 40. So this
+score is not "how much" of each you value in absolute terms, but **which way you lean**.
 
 Use your password to find your score(s).
 
@@ -38,49 +43,96 @@ Use your password to find your score(s).
 #| label: wk01-mentoring-style-compute
 #| include: false
 w1 <- dat |> transmute(Password = PASSWORD,
-  Support   = rowMeans(across(W1_1:W1_4)),
-  Structure = rowMeans(across(W1_5:W1_8)))
+  Support   = Q6_1 + Q6_2 + Q6_3 + Q6_4,
+  Structure = Q6_5 + Q6_6 + Q6_7 + Q6_8)
+# leaning relative to a balanced 20/20 split of the 40 points
+pref1 <- factor(dplyr::case_when(
+  w1$Support - w1$Structure >  2 ~ "Support-leaning",
+  w1$Support - w1$Structure < -2 ~ "Structure-leaning",
+  TRUE                           ~ "Balanced"),
+  levels = c("Structure-leaning", "Balanced", "Support-leaning"))
 ```
 
 ```{r}
 #| label: wk01-mentoring-style-table
 #| echo: false
 score_table(w1$Password, list(Support=w1$Support, Structure=w1$Structure),
-  "1. Mentoring: your composite scores (1–10)",
-  extra = list(Style = style_type(w1$Support, w1$Structure)))
+  "1. Mentoring Style: your Support and Structure point totals (out of 40)",
+  extra = list(Preference = pref1))
 ```
 
-## Locate Your Score {.unnumbered}
+## Locate Your Preference {.unnumbered}
 
-Locate your score(s) relative to other peer mentors!
+Locate your preference relative to other peer mentors! The axis is the points you placed on
+**support** (structure is 40 minus that): the far left is all structure, the far right is all
+support, and **20 is a balanced split**.
 
 ```{r}
 #| label: wk01-mentoring-style-plot
 #| echo: false
-#| fig-width: 9
-#| fig-height: 3.8
-norm_facets(list(Support=w1$Support, Structure=w1$Structure), xlab="Importance (1–10)", scale = c(1, 10))
+#| fig-width: 8
+#| fig-height: 4
+norm_facets(list(`Structure vs Support`=w1$Support),
+  xlab="Points placed on support (out of 40)", scale = c(0, 40), by = 10,
+  labels = c("0\nAll structure","10","20\nBalanced","30","40\nAll support"))
 ```
 
-## Your Mentoring Style {.unnumbered}
+## Your Type {.unnumbered}
 
-Each dot is one peer mentor. The dashed lines are the **class medians** on each dimension, so
-"high" and "low" here mean *relative to your classmates*, not relative to the 1–10 scale.
-Almost everyone rates both dimensions as important, so a scale-midpoint split would put the
-whole class in one corner. Find your **Style** in the table above, then find your quadrant.
+Structure and support are two dimensions that result in four mentoring styles. Neither
+dimension is "good" or "bad" on its own; it is the *combination* that describes how you show up
+as a mentor:
+
+| | **Low Support** | [**High Support**]{style="color:#007F85;"} |
+|---|---|---|
+| [**High Structure**]{style="color:#C0522A;"}| **Authoritarian:** high expectations, little warmth. Clear and demanding, but mentees may not feel safe asking for help. | [**Authoritative:**]{style="color:#005A43;"} high expectations *and* high warmth. Clear structure that mentees experience as being on their side. |
+| **Low Structure** | **Uninvolved:** low on both. Mentees are largely left to themselves. | **Permissive:** warm and caring, but loose on expectations. Mentees feel supported but may drift. |
+
+Unlike the budget above, your **type** comes from how skilled you feel at two independent sets
+of mentoring competencies (from the Mentoring Competency Assessment), so all four combinations
+are possible.
+
+- [**Support skill**]{style="color:#007F85;"}: assessing mentee knowledge, estimating mentee
+  ability, enhancing mentee skills, and building confidence.
+- [**Structure skill**]{style="color:#C0522A;"}: setting clear relationship expectations,
+  aligning expectations, and helping establish work/life balance.
+
+```{r}
+#| label: wk01-mentoring-style-type-compute
+#| include: false
+mca1 <- dat |> transmute(Password = PASSWORD,
+  `Support skill`   = rowMeans(across(c(Assess_Under1, Assess_Under2, Assess_Under3, Foster_Indepen2))),
+  `Structure skill` = rowMeans(across(c(Align_Expect1, Align_Expect2, Profess_Devel3))))
+```
+
+```{r}
+#| label: wk01-mentoring-style-type-table
+#| echo: false
+score_table(mca1$Password,
+  list(`Support skill`=mca1$`Support skill`, `Structure skill`=mca1$`Structure skill`),
+  "1. Mentoring Type: your MCA support- and structure-skill composites (1–7)",
+  extra = list(Type = style_type(mca1$`Support skill`, mca1$`Structure skill`)))
+```
+
+Each dot is one peer mentor. The dashed lines are the **class medians** on each skill, so
+"high" and "low" mean *relative to your classmates*. Find your **Type** in the table above,
+then find your quadrant.
 
 ```{r}
 #| label: wk01-mentoring-style-typology
 #| echo: false
 #| fig-width: 7
 #| fig-height: 5.4
-typology_plot(w1$Support, w1$Structure)
+typology_plot(mca1$`Support skill`, mca1$`Structure skill`,
+  xlab = "Support skill (MCA, 1–7)", ylab = "Structure skill (MCA, 1–7)")
 ```
 
 ::: {.callout-note}
-## Your style is a snapshot, not a fixed type
+## Your type is a snapshot, not a fixed type
 The median split means roughly a quarter of the class lands in each quadrant *by construction*.
-If you sit close to a dashed line, small changes in a few answers would move you. Each quadrant is a rough approximation of your balance between structure and support. This is not a fixed type! You can change your attention and behaviors to move from one quadrant to another over time.  
+If you sit close to a dashed line, small changes in a few answers would move you. Each quadrant
+is a rough approximation of your balance between structure and support. This is not a fixed
+type! You can build skill on either dimension and move from one quadrant to another over time.
 :::
 
 ## Reflect and Plan
@@ -93,5 +145,5 @@ If you sit close to a dashed line, small changes in a few answers would move you
 
 ::: {.callout-tip}
 ## During Class
-- Make note of how you provide mentees with both support and structure before, during, and after class 
+- Make note of how you provide mentees with both support and structure before, during, and after class
 :::
